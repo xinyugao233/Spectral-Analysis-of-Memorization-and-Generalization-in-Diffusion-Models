@@ -1,0 +1,130 @@
+{
+  "completed_at_unix": 1787773782.9091046,
+  "condition_count": 8,
+  "config_path": "/cluster/pixstor/zwggh-lab/xinyu/projects/spectral-diffusion-playground/configs/e011_fourier_component_swap.json",
+  "config_sha256": "b71582326ffdf3dc6eb6b09dc204640f858ae0c3d12d9b2cf88025a12b0c5e12",
+  "device": "cuda",
+  "expected_records": 8000,
+  "experiment_id": "E011",
+  "external_artifacts": {
+    "fid_images": {
+      "file_count": 8000,
+      "path": "/mnt/pixstor/data/xggh8/zw-lab/e011_fourier_component_swap/fid_images",
+      "size_bytes": 17983894,
+      "tree_sha256": "309a13ec9224d9738c71e95c1f763d2836494683bad80cc4edb5329c77c03a28"
+    },
+    "raw_samples": {
+      "file_count": 8000,
+      "path": "/mnt/pixstor/data/xggh8/zw-lab/e011_fourier_component_swap/raw_samples",
+      "size_bytes": 197632000,
+      "tree_sha256": "8edf4af767d66824c7cfcad9227e65cf51b184515443aecb513141da3cd7f000"
+    }
+  },
+  "external_provenance": {
+    "archive_sha256": "795cdc1444465ae4e19e25a0615d05ba0a0e83caa5db6b1b811deaf4c7910dfa",
+    "checkpoints": {
+      "edm_1k_012000": "/home/xggh8/data/zw-lab/exp_004_standard_edm_n1000_40000kimg_20260415/network-snapshot-012000.pkl",
+      "edm_50k_040000": "/home/xggh8/data/zw-lab/e005_edm50k_matched_40000kimg/network-snapshot-040000.pkl"
+    },
+    "edm_commit": "008a4e5316c8e3bfe61a62f874bddba254295afb",
+    "edm_worktree_clean": false,
+    "fid_py_path": "/cluster/pixstor/home/xggh8/edm/fid.py",
+    "fid_py_sha256": "704be0de2c77c0090fdb9787268360ef9d438ca83c6aca14aa6d4f51dcff364d",
+    "model_identities": {
+      "edm_1k_012000": {
+        "img_channels": 3,
+        "img_resolution": 32,
+        "label_dim": 0
+      },
+      "edm_50k_040000": {
+        "img_channels": 3,
+        "img_resolution": 32,
+        "label_dim": 0
+      }
+    },
+    "subset_int64_le_sha256": "f97076ea6db59a96dc81a59d1b573bc8aaecdb8efa1e93c0d79928bfbf8a43f8",
+    "subset_text_sha256": "33bb509c48144464a48d3b945cc44c14f880a1e6c6470c283dc0ed65e22b1f29"
+  },
+  "failure_count": 0,
+  "frequency_component_swap": true,
+  "frozen_input_hashes": {
+    "conditions_sha256": "26aa3a8686c4e56c70f3dbb9bf6e2d03d03e27fc1d65306b0b2fd4e9aca2d4bc",
+    "config_sha256": "b71582326ffdf3dc6eb6b09dc204640f858ae0c3d12d9b2cf88025a12b0c5e12",
+    "masks_sha256": "9bcbfb943025e5f03e6ee9cc0fbd0f70e849cc2309ba17f54bc9d0b3c0955859",
+    "model_pair_sha256": "92746b642eeeb4c57d0bba21e5c6090e719e50390526b696f7549a1ac6979116",
+    "seeds_sha256": "8cee0c8f7d9967041a0e1ad7c53cd80c6e1a5fbc85bdf2ec98e6045ac2013985"
+  },
+  "host": "g040.mgmt.hellbender",
+  "intervention_call_indices": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "intervention_sigma_values": [
+    8.400935309099816,
+    5.315194521796382,
+    3.256821519765537,
+    1.9233398370400518,
+    1.088170636545279,
+    0.5853481231945422,
+    0.29644228447915727,
+    0.13951646873101678
+  ],
+  "mode": "full",
+  "numpy": "2.4.0",
+  "observed_records": 8000,
+  "output_dir": "/mnt/pixstor/data/xggh8/zw-lab/e011_fourier_component_swap",
+  "outputs": {
+    "experiment_11_condition_summary.csv": {
+      "sha256": "97f6126d2ddf7a8a0c5ce51a897d71a0d2caa0628734473337e19ad544f74427",
+      "size_bytes": 623
+    },
+    "experiment_11_failures.csv": {
+      "sha256": "14b869f2587f555ceb076121f311d68aab7d3e7aca3f4eae7cc1032091c7cef6",
+      "size_bytes": 378
+    },
+    "experiment_11_fid_metrics.json": {
+      "sha256": "eb9a8a208cbbf8fd95b8c500176eba13cba8664b2967fdc8ba3dc424abc0da3f",
+      "size_bytes": 8060
+    },
+    "experiment_11_mask_comparison.csv": {
+      "sha256": "183326031a39c8f9432ac9cbd22243e90f46900384322d3a9c49441b0e2cf90d",
+      "size_bytes": 155
+    },
+    "experiment_11_paired_effects.csv": {
+      "sha256": "27cc85abc47781d36eab538854fa8d23689b5d14bc7b45ec94b2ec90c745554e",
+      "size_bytes": 337
+    },
+    "experiment_11_per_sample.csv": {
+      "sha256": "1f3e8138279c1aa7b26951f9bf8dca4921ae8ac48b7f2909ea524b0e13a091b9",
+      "size_bytes": 4397290
+    },
+    "experiment_11_validation.json": {
+      "sha256": "d321d5614c2778df1cdcbad5a37b90bfdee62ee5f3ee04656d37a64a706fdcd7",
+      "size_bytes": 779
+    }
+  },
+  "python": "3.13.11",
+  "repository_commit": "fe3c857dff0093f8ac02b8c60894c27421944a7f",
+  "sample_seed_range": [
+    50000,
+    50999
+  ],
+  "schema_version": 1,
+  "shared_state": true,
+  "slurm_job_id": "16820230",
+  "started_at_unix": 1787771499.201538,
+  "swap_target": "denoiser_prediction",
+  "torch": "2.7.1+cu118",
+  "training_executed": false,
+  "try_ids": [
+    "try01_radial_r11",
+    "try02_square_matched"
+  ],
+  "whole_denoiser_swap": false
+}

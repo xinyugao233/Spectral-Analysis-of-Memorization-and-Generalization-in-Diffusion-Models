@@ -1,0 +1,5 @@
+try_id,mask_type,effect_name,baseline_rate,hybrid_rate,paired_effect,ci95_low,ci95_high
+try01_radial_r11,disk,Delta_G,0.0,0.761,0.761,0.734,0.787
+try01_radial_r11,disk,Delta_M,0.87,0.0,-0.87,-0.89,-0.849
+try02_square_matched,square,Delta_G,0.0,0.737,0.737,0.709,0.764
+try02_square_matched,square,Delta_M,0.87,0.0,-0.87,-0.89,-0.849

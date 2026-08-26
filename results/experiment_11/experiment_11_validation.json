@@ -1,0 +1,29 @@
+{
+  "baseline_records_equal_across_tries": true,
+  "bootstrap_resamples": 100000,
+  "bootstrap_seed": 0,
+  "condition_counts": {
+    "try01_radial_r11/G": 1000,
+    "try01_radial_r11/G_from_M": 1000,
+    "try01_radial_r11/M": 1000,
+    "try01_radial_r11/M_from_G": 1000,
+    "try02_square_matched/G": 1000,
+    "try02_square_matched/G_from_M": 1000,
+    "try02_square_matched/M": 1000,
+    "try02_square_matched/M_from_G": 1000
+  },
+  "disk_mode_count": 377,
+  "expected_records": 8000,
+  "failure_count": 0,
+  "fid_1k_role": "descriptive_only",
+  "finite_nearest_neighbor_records": true,
+  "formal_directional_pass_fail_label": null,
+  "observed_records": 8000,
+  "seed_range": [
+    50000,
+    50999
+  ],
+  "square_mode_count": 361,
+  "status": "pass",
+  "unique_keys": 8000
+}

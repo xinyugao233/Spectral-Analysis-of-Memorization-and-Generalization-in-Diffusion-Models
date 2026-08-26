@@ -1,0 +1,206 @@
+{
+  "detector": {
+    "cache_path": "/cluster/pixstor/zwggh-lab/xinyu/slurm_tmp/e011_16820230/dnnlib/downloads/18d9c1159d16cd4cc6adf7db0f2dd2a9_https___api.ngc.nvidia.com_v2_models_nvidia_research_stylegan3_versions_1_files_metrics_inception-2015-12-05.pkl",
+    "sha256": "a31bd1d4522101109044ec28621a5fcb591ed6115e0d58104fc013fa01ef94f7",
+    "size_bytes": 95617399,
+    "url": "https://api.ngc.nvidia.com/v2/models/nvidia/research/stylegan3/versions/1/files/metrics/inception-2015-12-05.pkl"
+  },
+  "experiment_id": "E011",
+  "fid_py_sha256": "704be0de2c77c0090fdb9787268360ef9d438ca83c6aca14aa6d4f51dcff364d",
+  "mode": "full",
+  "records": [
+    {
+      "command": [
+        "/home/xggh8/miniconda3/bin/python",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nproc_per_node=1",
+        "/cluster/pixstor/home/xggh8/edm/fid.py",
+        "calc",
+        "--images=/mnt/pixstor/data/xggh8/zw-lab/e011_fourier_component_swap/fid_images/try01_radial_r11/G",
+        "--ref=https://nvlabs-fi-cdn.nvidia.com/edm/fid-refs/cifar10-32x32.npz",
+        "--num=1000",
+        "--seed=0",
+        "--batch=64"
+      ],
+      "condition_id": "G",
+      "fid_1k": 34.9014,
+      "image_count": 1000,
+      "log_path": "/mnt/pixstor/data/xggh8/zw-lab/e011_fourier_component_swap/fid_logs/try01_radial_r11__G.log",
+      "log_sha256": "454e767af3437cc3af1b5393f5987baf0fbddfcae8a86e173c28806526b954d5",
+      "return_code": 0,
+      "try_id": "try01_radial_r11"
+    },
+    {
+      "command": [
+        "/home/xggh8/miniconda3/bin/python",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nproc_per_node=1",
+        "/cluster/pixstor/home/xggh8/edm/fid.py",
+        "calc",
+        "--images=/mnt/pixstor/data/xggh8/zw-lab/e011_fourier_component_swap/fid_images/try01_radial_r11/M",
+        "--ref=https://nvlabs-fi-cdn.nvidia.com/edm/fid-refs/cifar10-32x32.npz",
+        "--num=1000",
+        "--seed=0",
+        "--batch=64"
+      ],
+      "condition_id": "M",
+      "fid_1k": 43.4477,
+      "image_count": 1000,
+      "log_path": "/mnt/pixstor/data/xggh8/zw-lab/e011_fourier_component_swap/fid_logs/try01_radial_r11__M.log",
+      "log_sha256": "a2661712469ba6aada6988d16097c54b8923c451cce12b1b14ae1850d721be3e",
+      "return_code": 0,
+      "try_id": "try01_radial_r11"
+    },
+    {
+      "command": [
+        "/home/xggh8/miniconda3/bin/python",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nproc_per_node=1",
+        "/cluster/pixstor/home/xggh8/edm/fid.py",
+        "calc",
+        "--images=/mnt/pixstor/data/xggh8/zw-lab/e011_fourier_component_swap/fid_images/try01_radial_r11/G_from_M",
+        "--ref=https://nvlabs-fi-cdn.nvidia.com/edm/fid-refs/cifar10-32x32.npz",
+        "--num=1000",
+        "--seed=0",
+        "--batch=64"
+      ],
+      "condition_id": "G_from_M",
+      "fid_1k": 38.019,
+      "image_count": 1000,
+      "log_path": "/mnt/pixstor/data/xggh8/zw-lab/e011_fourier_component_swap/fid_logs/try01_radial_r11__G_from_M.log",
+      "log_sha256": "244e50221a118a40983ff70b1eb70fe65883ac7a311e5c123978cbf11015496c",
+      "return_code": 0,
+      "try_id": "try01_radial_r11"
+    },
+    {
+      "command": [
+        "/home/xggh8/miniconda3/bin/python",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nproc_per_node=1",
+        "/cluster/pixstor/home/xggh8/edm/fid.py",
+        "calc",
+        "--images=/mnt/pixstor/data/xggh8/zw-lab/e011_fourier_component_swap/fid_images/try01_radial_r11/M_from_G",
+        "--ref=https://nvlabs-fi-cdn.nvidia.com/edm/fid-refs/cifar10-32x32.npz",
+        "--num=1000",
+        "--seed=0",
+        "--batch=64"
+      ],
+      "condition_id": "M_from_G",
+      "fid_1k": 97.6654,
+      "image_count": 1000,
+      "log_path": "/mnt/pixstor/data/xggh8/zw-lab/e011_fourier_component_swap/fid_logs/try01_radial_r11__M_from_G.log",
+      "log_sha256": "3fad071c4363714e8e40814d0f77724680c30f33e01ad999d0b9da578188f854",
+      "return_code": 0,
+      "try_id": "try01_radial_r11"
+    },
+    {
+      "command": [
+        "/home/xggh8/miniconda3/bin/python",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nproc_per_node=1",
+        "/cluster/pixstor/home/xggh8/edm/fid.py",
+        "calc",
+        "--images=/mnt/pixstor/data/xggh8/zw-lab/e011_fourier_component_swap/fid_images/try02_square_matched/G",
+        "--ref=https://nvlabs-fi-cdn.nvidia.com/edm/fid-refs/cifar10-32x32.npz",
+        "--num=1000",
+        "--seed=0",
+        "--batch=64"
+      ],
+      "condition_id": "G",
+      "fid_1k": 34.9014,
+      "image_count": 1000,
+      "log_path": "/mnt/pixstor/data/xggh8/zw-lab/e011_fourier_component_swap/fid_logs/try02_square_matched__G.log",
+      "log_sha256": "6f5208ca0b81af377ad486f823b2451b1ffb3bcd6d5206e6e5e772c59a329ddf",
+      "return_code": 0,
+      "try_id": "try02_square_matched"
+    },
+    {
+      "command": [
+        "/home/xggh8/miniconda3/bin/python",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nproc_per_node=1",
+        "/cluster/pixstor/home/xggh8/edm/fid.py",
+        "calc",
+        "--images=/mnt/pixstor/data/xggh8/zw-lab/e011_fourier_component_swap/fid_images/try02_square_matched/M",
+        "--ref=https://nvlabs-fi-cdn.nvidia.com/edm/fid-refs/cifar10-32x32.npz",
+        "--num=1000",
+        "--seed=0",
+        "--batch=64"
+      ],
+      "condition_id": "M",
+      "fid_1k": 43.4477,
+      "image_count": 1000,
+      "log_path": "/mnt/pixstor/data/xggh8/zw-lab/e011_fourier_component_swap/fid_logs/try02_square_matched__M.log",
+      "log_sha256": "e174f2cec4b352d4654739e57a67b12d2993e7439c2a4054d682738eb4643ae8",
+      "return_code": 0,
+      "try_id": "try02_square_matched"
+    },
+    {
+      "command": [
+        "/home/xggh8/miniconda3/bin/python",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nproc_per_node=1",
+        "/cluster/pixstor/home/xggh8/edm/fid.py",
+        "calc",
+        "--images=/mnt/pixstor/data/xggh8/zw-lab/e011_fourier_component_swap/fid_images/try02_square_matched/G_from_M",
+        "--ref=https://nvlabs-fi-cdn.nvidia.com/edm/fid-refs/cifar10-32x32.npz",
+        "--num=1000",
+        "--seed=0",
+        "--batch=64"
+      ],
+      "condition_id": "G_from_M",
+      "fid_1k": 38.4852,
+      "image_count": 1000,
+      "log_path": "/mnt/pixstor/data/xggh8/zw-lab/e011_fourier_component_swap/fid_logs/try02_square_matched__G_from_M.log",
+      "log_sha256": "4e58583a6c21dde0840d7202d646a1e30aa2b525bd67eca2018b092e0abaf8d4",
+      "return_code": 0,
+      "try_id": "try02_square_matched"
+    },
+    {
+      "command": [
+        "/home/xggh8/miniconda3/bin/python",
+        "-m",
+        "torch.distributed.run",
+        "--standalone",
+        "--nproc_per_node=1",
+        "/cluster/pixstor/home/xggh8/edm/fid.py",
+        "calc",
+        "--images=/mnt/pixstor/data/xggh8/zw-lab/e011_fourier_component_swap/fid_images/try02_square_matched/M_from_G",
+        "--ref=https://nvlabs-fi-cdn.nvidia.com/edm/fid-refs/cifar10-32x32.npz",
+        "--num=1000",
+        "--seed=0",
+        "--batch=64"
+      ],
+      "condition_id": "M_from_G",
+      "fid_1k": 99.3803,
+      "image_count": 1000,
+      "log_path": "/mnt/pixstor/data/xggh8/zw-lab/e011_fourier_component_swap/fid_logs/try02_square_matched__M_from_G.log",
+      "log_sha256": "2dff2d6feaec564b61dd5a899ab94ca7e8780544e7e1f8e3b552902cf49dfdba",
+      "return_code": 0,
+      "try_id": "try02_square_matched"
+    }
+  ],
+  "reference": {
+    "cache_path": "/cluster/pixstor/zwggh-lab/xinyu/slurm_tmp/e011_16820230/dnnlib/downloads/fb5723973c843f2c5ec8c9c512572ae2_https___nvlabs-fi-cdn.nvidia.com_edm_fid-refs_cifar10-32x32.npz",
+    "sha256": "4ada108cdfd8e43409ed427f5f76631beac9b9617cdcaf416d41b1e161d85969",
+    "size_bytes": 33571316,
+    "url": "https://nvlabs-fi-cdn.nvidia.com/edm/fid-refs/cifar10-32x32.npz"
+  },
+  "role": "descriptive_only",
+  "schema_version": 1,
+  "source_commit": "008a4e5316c8e3bfe61a62f874bddba254295afb"
+}

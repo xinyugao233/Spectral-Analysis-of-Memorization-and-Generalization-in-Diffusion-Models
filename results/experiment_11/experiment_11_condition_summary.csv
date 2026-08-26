@@ -1,0 +1,9 @@
+try_id,mask_type,condition_id,memorized_count,sample_count,memorization_rate,fid_1k_descriptive
+try01_radial_r11,disk,G,0,1000,0,34.901400000000002
+try01_radial_r11,disk,M,870,1000,0.87,43.447699999999998
+try01_radial_r11,disk,G_from_M,761,1000,0.76100000000000001,38.018999999999998
+try01_radial_r11,disk,M_from_G,0,1000,0,97.665400000000005
+try02_square_matched,square,G,0,1000,0,34.901400000000002
+try02_square_matched,square,M,870,1000,0.87,43.447699999999998
+try02_square_matched,square,G_from_M,737,1000,0.73699999999999999,38.485199999999999
+try02_square_matched,square,M_from_G,0,1000,0,99.380300000000005
