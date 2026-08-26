@@ -20,7 +20,8 @@ write explicit outputs.
 | E008 swap protocol | Frequency-geometry whole-denoiser swaps | `RETIRED_UNEXECUTED`; historical `BLOCKED_NO_ELIGIBLE_PAIR` |
 | E009 protocols and evaluators | Intermediate-dataset model search | Complete; no eligible >=5K checkpoint through Stage B |
 | `10_directional_memorization_transfer.py` | Directional whole-denoiser swaps over E004B-derived intervals | Complete; `HIGH_DERIVED_SUPPRESSION_SUPPORTED` |
-| `11_fourier_component_swap.py` | Shared-state denoiser-prediction Fourier-component swaps | Ready for guarded smoke; no result yet |
+| `11_fourier_component_swap.py` | Shared-state denoiser-prediction Fourier-component swaps | Complete; validated radial and square results |
+| `12_frequency_localization.py` | Radial localization and factorial analysis inside E011's `r<=11` mask | Implementing; full run gated on smoke review |
 
 ## Local Foundations
 
@@ -56,6 +57,7 @@ scripts/e005_eval_spectral_residuals.slurm
 scripts/e006_eval_transition_swaps.slurm
 scripts/e010_directional_transfer.slurm
 scripts/e011_fourier_component_swap.slurm
+scripts/e012_frequency_localization.slurm
 ```
 
 Exact commands and identities are in the
@@ -78,11 +80,17 @@ E010 is a distinct asymmetric-baseline directional intervention. Its
 and [analysis plan](../docs/experiment_10_directional_analysis_plan.md) are
 frozen before inference. It does not satisfy E008's baseline-matching gate.
 
-E011 is a new frequency-component intervention using the same E010 model pair.
-Its [protocol](../docs/experiment_11_fourier_component_swap_protocol.md)
-freezes a radial `r<=11` try and a weighted-mode-count-matched square `K=9`
-try over calls `6..13`. It has no results until the guarded smoke and full run
-pass.
+E011 is a frequency-component intervention using the same E010 model pair.
+Its [protocol](../docs/experiment_11_fourier_component_swap_protocol.md) and
+[validated results](../docs/experiment_11_fourier_component_swap_results.md)
+compare a radial `r<=11` mask with a weighted-mode-count-matched square `K=9`
+over calls `6..13`.
+
+E012's [frozen protocol](../docs/experiment_12_frequency_localization_protocol.md)
+partitions the successful E011 radial mask into three disjoint contiguous
+bands, runs their full `2^3` factorial plus adjacent control `11<r<=13`, and
+keeps calls `6..13` fixed. Its full run is prohibited until its smoke is
+reviewed and explicitly authorized.
 
 The separate [checkpoint preflight](../docs/experiment_08_checkpoint_preflight.md)
 evaluates no-swap pilot baselines only. Its interface cannot accept a donor

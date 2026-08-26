@@ -134,12 +134,22 @@ support only high-derived suppression under the frozen criterion.
 ## E011: Wild-Middle Fourier-Component Swaps
 
 1. [Frozen protocol](experiment_11_fourier_component_swap_protocol.md)
+2. [Validated results](experiment_11_fourier_component_swap_results.md)
 
-E011 is ready for guarded smoke validation. It reuses the E010 model pair but
-intervenes on selected Fourier coefficients of the two models' denoiser
-predictions evaluated on one shared state. Try 01 uses the radial disk
-`r<=11`; Try 02 uses the closest weighted-mode-count square, `K=9`. Both use
-calls `6..13` and seeds `50000..50999`. No E011 result exists yet.
+E011 reuses the E010 model pair but intervenes on selected Fourier
+coefficients of the two models' denoiser predictions evaluated on one shared
+state. The validated full run found strong transfer in both the radial
+`r<=11` and matched-square `K=9` tries. The result does not establish that
+middle frequencies cause memorization.
+
+## E012: Radial Frequency Localization
+
+1. [Frozen protocol](experiment_12_frequency_localization_protocol.md)
+
+E012 holds E011's calls `6..13` fixed and partitions the successful radial
+mask into B1 `0<=r<=6`, B2 `6<r<=9`, and B3 `9<r<=11`. It preregisters all
+eight factorial subsets plus adjacent control B4 `11<r<=13`. Implementation
+and guarded smoke validation precede any explicitly authorized full run.
 
 ## Pipeline Audit
 

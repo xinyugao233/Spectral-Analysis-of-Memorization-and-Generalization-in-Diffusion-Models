@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "experiment_id": "E012",
+  "base_model": "edm_50k_040000",
+  "donor_model": "edm_1k_012000",
+  "intervention_call_indices": [6, 7, 8, 9, 10, 11, 12, 13],
+  "swap_target": "denoiser_prediction",
+  "shared_state": true,
+  "conditions": [
+    {"condition_id": "000_none", "bands": []},
+    {"condition_id": "100_B1", "bands": ["B1"]},
+    {"condition_id": "010_B2", "bands": ["B2"]},
+    {"condition_id": "001_B3", "bands": ["B3"]},
+    {"condition_id": "110_B1_B2", "bands": ["B1", "B2"]},
+    {"condition_id": "101_B1_B3", "bands": ["B1", "B3"]},
+    {"condition_id": "011_B2_B3", "bands": ["B2", "B3"]},
+    {"condition_id": "111_B1_B2_B3", "bands": ["B1", "B2", "B3"]},
+    {"condition_id": "control_B4", "bands": ["B4"]}
+  ]
+}

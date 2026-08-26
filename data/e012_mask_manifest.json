@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "experiment_id": "E012",
+  "image_height": 32,
+  "image_width": 32,
+  "channels": 3,
+  "fft": "torch.fft.rfft2/irfft2",
+  "normalization": "ortho",
+  "weighting": "kx=0 and kx=Nyquist count once; other stored kx count twice",
+  "bands": {
+    "B1": {"definition": "0 <= r <= 6", "stored_rfft2_coefficients": 63, "effective_full_spectrum_modes": 113},
+    "B2": {"definition": "6 < r <= 9", "stored_rfft2_coefficients": 73, "effective_full_spectrum_modes": 140},
+    "B3": {"definition": "9 < r <= 11", "stored_rfft2_coefficients": 64, "effective_full_spectrum_modes": 124},
+    "B4": {"definition": "11 < r <= 13", "stored_rfft2_coefficients": 78, "effective_full_spectrum_modes": 152}
+  },
+  "factorial_union": {
+    "bands": ["B1", "B2", "B3"],
+    "definition": "r <= 11",
+    "stored_rfft2_coefficients": 200,
+    "effective_full_spectrum_modes": 377,
+    "must_equal_e011_disk_mask": true
+  }
+}
