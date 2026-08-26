@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "experiment_id": "E011",
+  "image_height": 32,
+  "image_width": 32,
+  "channels": 3,
+  "fft": "torch.fft.rfft2/irfft2",
+  "normalization": "ortho",
+  "disk": {
+    "definition": "sqrt(kx^2 + ky^2) <= 11",
+    "radius": 11,
+    "stored_rfft2_coefficients": 200,
+    "effective_full_spectrum_modes": 377,
+    "effective_modes_all_channels": 1131
+  },
+  "square": {
+    "definition": "max(abs(kx), abs(ky)) <= K",
+    "candidate_cutoffs": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+    "chosen_cutoff": 9,
+    "stored_rfft2_coefficients": 190,
+    "effective_full_spectrum_modes": 361,
+    "effective_modes_all_channels": 1083
+  },
+  "matching": {
+    "weighting": "kx=0 and kx=Nyquist count once; other stored kx count twice",
+    "absolute_mode_count_difference": 16,
+    "relative_mode_count_difference": 0.042440318302387266,
+    "tie_break": "smallest integer K"
+  }
+}

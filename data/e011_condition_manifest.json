@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "experiment_id": "E011",
+  "intervention_call_indices": [6, 7, 8, 9, 10, 11, 12, 13],
+  "swap_target": "denoiser_prediction",
+  "shared_state": true,
+  "tries": [
+    {
+      "try_id": "try01_radial_r11",
+      "mask_type": "disk",
+      "conditions": [
+        {"condition_id": "G", "base_model": "edm_50k_040000", "donor_model": null},
+        {"condition_id": "M", "base_model": "edm_1k_012000", "donor_model": null},
+        {"condition_id": "G_from_M", "base_model": "edm_50k_040000", "donor_model": "edm_1k_012000"},
+        {"condition_id": "M_from_G", "base_model": "edm_1k_012000", "donor_model": "edm_50k_040000"}
+      ]
+    },
+    {
+      "try_id": "try02_square_matched",
+      "mask_type": "square",
+      "conditions": [
+        {"condition_id": "G", "base_model": "edm_50k_040000", "donor_model": null},
+        {"condition_id": "M", "base_model": "edm_1k_012000", "donor_model": null},
+        {"condition_id": "G_from_M", "base_model": "edm_50k_040000", "donor_model": "edm_1k_012000"},
+        {"condition_id": "M_from_G", "base_model": "edm_1k_012000", "donor_model": "edm_50k_040000"}
+      ]
+    }
+  ]
+}

@@ -20,6 +20,7 @@ write explicit outputs.
 | E008 swap protocol | Frequency-geometry whole-denoiser swaps | `RETIRED_UNEXECUTED`; historical `BLOCKED_NO_ELIGIBLE_PAIR` |
 | E009 protocols and evaluators | Intermediate-dataset model search | Complete; no eligible >=5K checkpoint through Stage B |
 | `10_directional_memorization_transfer.py` | Directional whole-denoiser swaps over E004B-derived intervals | Complete; `HIGH_DERIVED_SUPPRESSION_SUPPORTED` |
+| `11_fourier_component_swap.py` | Shared-state denoiser-prediction Fourier-component swaps | Ready for guarded smoke; no result yet |
 
 ## Local Foundations
 
@@ -54,6 +55,7 @@ verifying every hash and output-path collision gate:
 scripts/e005_eval_spectral_residuals.slurm
 scripts/e006_eval_transition_swaps.slurm
 scripts/e010_directional_transfer.slurm
+scripts/e011_fourier_component_swap.slurm
 ```
 
 Exact commands and identities are in the
@@ -75,6 +77,12 @@ E010 is a distinct asymmetric-baseline directional intervention. Its
 [protocol](../docs/experiment_10_directional_memorization_transfer_protocol.md)
 and [analysis plan](../docs/experiment_10_directional_analysis_plan.md) are
 frozen before inference. It does not satisfy E008's baseline-matching gate.
+
+E011 is a new frequency-component intervention using the same E010 model pair.
+Its [protocol](../docs/experiment_11_fourier_component_swap_protocol.md)
+freezes a radial `r<=11` try and a weighted-mode-count-matched square `K=9`
+try over calls `6..13`. It has no results until the guarded smoke and full run
+pass.
 
 The separate [checkpoint preflight](../docs/experiment_08_checkpoint_preflight.md)
 evaluates no-swap pilot baselines only. Its interface cannot accept a donor

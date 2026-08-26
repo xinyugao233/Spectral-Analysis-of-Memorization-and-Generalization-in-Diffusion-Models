@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "experiment_id": "E011",
+  "run_id": "e011_fourier_component_swap",
+  "execution_commit_contract": "E011_REPO_COMMIT",
+  "inputs": {
+    "model_pair_manifest": "data/e010_model_pair_manifest.json",
+    "model_pair_manifest_sha256": "92746b642eeeb4c57d0bba21e5c6090e719e50390526b696f7549a1ac6979116",
+    "condition_manifest": "data/e011_condition_manifest.json",
+    "condition_manifest_sha256": "26aa3a8686c4e56c70f3dbb9bf6e2d03d03e27fc1d65306b0b2fd4e9aca2d4bc",
+    "seed_manifest": "data/e011_seed_manifest.json",
+    "seed_manifest_sha256": "8cee0c8f7d9967041a0e1ad7c53cd80c6e1a5fbc85bdf2ec98e6045ac2013985",
+    "mask_manifest": "data/e011_mask_manifest.json",
+    "mask_manifest_sha256": "9bcbfb943025e5f03e6ee9cc0fbd0f70e849cc2309ba17f54bc9d0b3c0955859"
+  },
+  "reference": {
+    "archive": "/home/xggh8/datasets/edm/cifar10-32x32-train50k.zip",
+    "archive_sha256": "795cdc1444465ae4e19e25a0615d05ba0a0e83caa5db6b1b811deaf4c7910dfa",
+    "subset_indices": "data/e005_cifar10_subset_1k_indices.txt",
+    "subset_text_sha256": "33bb509c48144464a48d3b945cc44c14f880a1e6c6470c283dc0ed65e22b1f29",
+    "subset_int64_le_sha256": "f97076ea6db59a96dc81a59d1b573bc8aaecdb8efa1e93c0d79928bfbf8a43f8",
+    "normalization": "uint8 / 127.5 - 1.0"
+  },
+  "sampler": {
+    "algorithm": "pure_euler",
+    "num_denoiser_calls": 18,
+    "intervention_call_indices": [6, 7, 8, 9, 10, 11, 12, 13],
+    "churn": 0.0,
+    "heun_correction": false,
+    "class_labels": null,
+    "clamp": false,
+    "quantize": false,
+    "swap_target": "denoiser_prediction",
+    "shared_state": true
+  },
+  "nearest_neighbor": {
+    "device": "cpu",
+    "dtype": "float64",
+    "distance": "direct_squared_differences_then_euclidean_sqrt",
+    "tie_break": "distance_then_reference_position",
+    "criterion": "d1nn < d2nn / 3"
+  },
+  "fid": {
+    "role": "descriptive_only",
+    "source_root": "/home/xggh8/edm",
+    "source_commit": "008a4e5316c8e3bfe61a62f874bddba254295afb",
+    "fid_py_sha256": "704be0de2c77c0090fdb9787268360ef9d438ca83c6aca14aa6d4f51dcff364d",
+    "reference_url": "https://nvlabs-fi-cdn.nvidia.com/edm/fid-refs/cifar10-32x32.npz",
+    "detector_url": "https://api.ngc.nvidia.com/v2/models/nvidia/research/stylegan3/versions/1/files/metrics/inception-2015-12-05.pkl",
+    "image_conversion": "clip(sample * 127.5 + 128, 0, 255).astype(uint8)",
+    "full_image_count": 1000,
+    "smoke_image_count": 2
+  },
+  "analysis": {
+    "bootstrap_resamples": 100000,
+    "bootstrap_seed": 0,
+    "confidence_level": 0.95,
+    "resampling_unit": "latent_seed",
+    "direction_is_not_hard_coded_as_pass_fail": true
+  },
+  "execution": {
+    "edm_root": "/home/xggh8/edm",
+    "full_output_dir": "/home/xggh8/data/zw-lab/e011_fourier_component_swap",
+    "device": "cuda",
+    "expected_records": 8000
+  }
+}

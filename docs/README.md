@@ -131,6 +131,16 @@ dataset-size causality. The
 [validated results](experiment_10_directional_memorization_transfer_results.md)
 support only high-derived suppression under the frozen criterion.
 
+## E011: Wild-Middle Fourier-Component Swaps
+
+1. [Frozen protocol](experiment_11_fourier_component_swap_protocol.md)
+
+E011 is ready for guarded smoke validation. It reuses the E010 model pair but
+intervenes on selected Fourier coefficients of the two models' denoiser
+predictions evaluated on one shared state. Try 01 uses the radial disk
+`r<=11`; Try 02 uses the closest weighted-mode-count square, `K=9`. Both use
+calls `6..13` and seeds `50000..50999`. No E011 result exists yet.
+
 ## Pipeline Audit
 
 [The frequency-resolved pipeline audit](frequency_resolved_pipeline_audit.md)
