@@ -26,16 +26,10 @@ esac
 REPO_ROOT="$(cd "$E011_REPO_ROOT" && pwd -P)"
 ENTRYPOINT="${REPO_ROOT}/experiments/11_fourier_component_swap.py"
 CONFIG="${REPO_ROOT}/configs/e011_fourier_component_swap.json"
-E011_TORCHRUN="/home/xggh8/.local/bin/torchrun"
 if [ ! -d "${REPO_ROOT}/.git" ] || [ ! -f "$ENTRYPOINT" ] || [ ! -f "$CONFIG" ]; then
   echo "error: E011 checkout is incomplete: ${REPO_ROOT}" >&2
   exit 1
 fi
-if [ ! -x "$E011_TORCHRUN" ]; then
-  echo "error: E011 torchrun is not executable: ${E011_TORCHRUN}" >&2
-  exit 1
-fi
-export E011_TORCHRUN
 if [ "$(git -C "$REPO_ROOT" rev-parse HEAD)" != "$E011_REPO_COMMIT" ]; then
   echo "error: E011 repository commit mismatch" >&2
   exit 1
@@ -102,8 +96,19 @@ echo "output_dir=${OUTPUT_DIR:-none}"
 echo "slurm_tmpdir_source=${TMP_SOURCE}"
 echo "slurm_tmpdir=${SLURM_TMPDIR}"
 echo "dnnlib_cache_dir=${DNNLIB_CACHE_DIR}"
-echo "torchrun=${E011_TORCHRUN}"
 echo "training_executed=false"
+
+python - <<'PY'
+import sys
+
+import torch
+
+print(f"python_executable={sys.executable}")
+print(f"torch_version={torch.__version__}")
+print(f"torch_file={torch.__file__}")
+PY
+python -m torch.distributed.run --help >/dev/null
+echo "torch_distributed_run_help=pass"
 
 cd "$REPO_ROOT"
 if [ "$MODE" = "preflight" ]; then
