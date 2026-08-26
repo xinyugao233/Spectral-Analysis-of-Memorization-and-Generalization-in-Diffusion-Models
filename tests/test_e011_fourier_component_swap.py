@@ -244,6 +244,11 @@ class E011FourierSwapTests(unittest.TestCase):
         self.assertIn('DNNLIB_CACHE_DIR="${TMP_ROOT}/dnnlib"', launcher)
         self.assertIn("CUBLAS_WORKSPACE_CONFIG=:4096:8", launcher)
         self.assertIn("--gres=gpu:L40S:1", launcher)
+        self.assertIn('E011_TORCHRUN="/home/xggh8/.local/bin/torchrun"', launcher)
+        self.assertIn('if [ ! -x "$E011_TORCHRUN" ]', launcher)
+        entrypoint = (ROOT / "experiments/11_fourier_component_swap.py").read_text()
+        self.assertIn('os.environ.get("E011_TORCHRUN", "")', entrypoint)
+        self.assertIn("str(torchrun)", entrypoint)
         self.assertNotIn("BASH_SOURCE", launcher)
 
     def test_full_output_is_immutable_without_explicit_resume(self) -> None:

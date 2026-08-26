@@ -63,6 +63,17 @@ FAILURES = "experiment_11_failures.csv"
 FID_METRICS = "experiment_11_fid_metrics.json"
 
 
+def resolve_torchrun() -> Path:
+    """Return the launcher-pinned absolute torchrun executable."""
+    value = os.environ.get("E011_TORCHRUN", "")
+    path = Path(value)
+    if not value or not path.is_absolute():
+        raise RuntimeError("E011_TORCHRUN must be an absolute path")
+    if not path.is_file() or not os.access(path, os.X_OK):
+        raise RuntimeError(f"E011_TORCHRUN is not executable: {path}")
+    return path
+
+
 def parse_args() -> argparse.Namespace:
     """Parse the guarded E011 command-line interface."""
     parser = argparse.ArgumentParser()
@@ -526,6 +537,7 @@ def run_official_fid(
     mode: str,
 ) -> dict[str, Any]:
     """Run the hash-pinned official EDM FID evaluator on generated PNGs."""
+    torchrun = resolve_torchrun()
     conditions = frozen_conditions()
     selected = conditions if mode == "full" else (conditions[0],)
     image_count = (
@@ -545,7 +557,7 @@ def run_official_fid(
         if len(pngs) != image_count:
             raise RuntimeError(f"FID image count mismatch for {key}: {len(pngs)}")
         command = [
-            "torchrun",
+            str(torchrun),
             "--standalone",
             "--nproc_per_node=1",
             str(edm_root / "fid.py"),
