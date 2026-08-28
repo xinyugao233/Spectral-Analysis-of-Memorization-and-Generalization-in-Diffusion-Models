@@ -116,6 +116,22 @@ target-versus-control confidence intervals, timeline mapping, and
 representative generated/nearest-reference pairs. These are whole-denoiser
 swap results over frequency-derived intervals, not frequency-component swaps.
 
+## E011 Fourier-Component Swap
+
+[`experiment_11/`](experiment_11/) contains four final figures covering
+memorization transfer, paired effects, descriptive FID-1K, and radial versus
+mode-count-matched square masks. The primary public figure is
+[`experiment_11_memorization_rates.png`](experiment_11/experiment_11_memorization_rates.png).
+
+## E012 Radial Frequency Localization
+
+[`experiment_12/`](experiment_12/) contains the frozen band schematic,
+condition memorization rates, factorial contrasts, full-mask overlap, and
+descriptive FID-1K. The primary public figure is
+[`experiment_12_memorization_rates.png`](experiment_12/experiment_12_memorization_rates.png),
+with [`experiment_12_factorial_contrasts.png`](experiment_12/experiment_12_factorial_contrasts.png)
+providing the paired interaction analysis.
+
 ## Figure Policy
 
 Keep filenames stable, use one experiment subdirectory for scientific result

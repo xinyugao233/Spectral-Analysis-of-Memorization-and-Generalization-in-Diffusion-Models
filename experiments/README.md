@@ -21,7 +21,7 @@ write explicit outputs.
 | E009 protocols and evaluators | Intermediate-dataset model search | Complete; no eligible >=5K checkpoint through Stage B |
 | `10_directional_memorization_transfer.py` | Directional whole-denoiser swaps over E004B-derived intervals | Complete; `HIGH_DERIVED_SUPPRESSION_SUPPORTED` |
 | `11_fourier_component_swap.py` | Shared-state denoiser-prediction Fourier-component swaps | Complete; validated radial and square results |
-| `12_frequency_localization.py` | Radial localization and factorial analysis inside E011's `r<=11` mask | Implementing; full run gated on smoke review |
+| `12_frequency_localization.py` | Radial localization and factorial analysis inside E011's `r<=11` mask | Complete; 9,000 validated records |
 
 ## Local Foundations
 
@@ -89,8 +89,9 @@ over calls `6..13`.
 E012's [frozen protocol](../docs/experiment_12_frequency_localization_protocol.md)
 partitions the successful E011 radial mask into three disjoint contiguous
 bands, runs their full `2^3` factorial plus adjacent control `11<r<=13`, and
-keeps calls `6..13` fixed. Its full run is prohibited until its smoke is
-reviewed and explicitly authorized.
+keeps calls `6..13` fixed. Its [validated results](../docs/experiment_12_frequency_localization_results.md)
+record all 9,000 expected samples with zero failures and a dominant B1 x B2
+interaction.
 
 The separate [checkpoint preflight](../docs/experiment_08_checkpoint_preflight.md)
 evaluates no-swap pilot baselines only. Its interface cannot accept a donor

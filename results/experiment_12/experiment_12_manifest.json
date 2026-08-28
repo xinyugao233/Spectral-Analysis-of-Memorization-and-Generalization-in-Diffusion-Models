@@ -1,0 +1,147 @@
+{
+  "completed_at_unix": 1787780608.4871328,
+  "condition_count": 9,
+  "condition_ids": [
+    "000_none",
+    "100_B1",
+    "010_B2",
+    "001_B3",
+    "110_B1_B2",
+    "101_B1_B3",
+    "011_B2_B3",
+    "111_B1_B2_B3",
+    "control_B4"
+  ],
+  "config_path": "/cluster/pixstor/zwggh-lab/xinyu/projects/spectral-diffusion-playground/configs/e012_frequency_localization.json",
+  "config_sha256": "5b83f76823614b469d3c22024e2d8beec7accf204ce5fc2e0f598ccfddbaf439",
+  "device": "cuda",
+  "expected_records": 9000,
+  "experiment_id": "E012",
+  "external_artifacts": {
+    "fid_images": {
+      "file_count": 9000,
+      "path": "/mnt/pixstor/data/xggh8/zw-lab/e012_frequency_localization/fid_images",
+      "size_bytes": 19842113,
+      "tree_sha256": "2169709b3889d7c68095170cdfa89e35a3ae46af5130b779cced17eae4095bf8"
+    },
+    "raw_samples": {
+      "file_count": 9000,
+      "path": "/mnt/pixstor/data/xggh8/zw-lab/e012_frequency_localization/raw_samples",
+      "size_bytes": 222336000,
+      "tree_sha256": "08f9c7c143db53932cb336f9aa5a05c64fde3345bbc17faf8f64f0b0422d826b"
+    }
+  },
+  "external_provenance": {
+    "archive_sha256": "795cdc1444465ae4e19e25a0615d05ba0a0e83caa5db6b1b811deaf4c7910dfa",
+    "checkpoints": {
+      "edm_1k_012000": "/home/xggh8/data/zw-lab/exp_004_standard_edm_n1000_40000kimg_20260415/network-snapshot-012000.pkl",
+      "edm_50k_040000": "/home/xggh8/data/zw-lab/e005_edm50k_matched_40000kimg/network-snapshot-040000.pkl"
+    },
+    "edm_commit": "008a4e5316c8e3bfe61a62f874bddba254295afb",
+    "edm_worktree_clean": false,
+    "fid_py_path": "/cluster/pixstor/home/xggh8/edm/fid.py",
+    "fid_py_sha256": "704be0de2c77c0090fdb9787268360ef9d438ca83c6aca14aa6d4f51dcff364d",
+    "model_identities": {
+      "edm_1k_012000": {
+        "img_channels": 3,
+        "img_resolution": 32,
+        "label_dim": 0
+      },
+      "edm_50k_040000": {
+        "img_channels": 3,
+        "img_resolution": 32,
+        "label_dim": 0
+      }
+    },
+    "subset_int64_le_sha256": "f97076ea6db59a96dc81a59d1b573bc8aaecdb8efa1e93c0d79928bfbf8a43f8",
+    "subset_text_sha256": "33bb509c48144464a48d3b945cc44c14f880a1e6c6470c283dc0ed65e22b1f29"
+  },
+  "failure_count": 0,
+  "frequency_component_swap": true,
+  "frozen_input_hashes": {
+    "conditions_sha256": "4f9b48817fe45d537938c5c86758a862fabf169f77083490901ffba2e6d069a9",
+    "config_sha256": "5b83f76823614b469d3c22024e2d8beec7accf204ce5fc2e0f598ccfddbaf439",
+    "masks_sha256": "6149b5551c54a537dfd3e5e2d53c52b25f2e4d1d5ec875a7e10134b4bed12b51",
+    "model_pair_sha256": "92746b642eeeb4c57d0bba21e5c6090e719e50390526b696f7549a1ac6979116",
+    "seeds_sha256": "51d58f8502504adea6f85bcb84ec9601178f57b5beccf3167c32f99369da2a9d"
+  },
+  "host": "g039.mgmt.hellbender",
+  "intervention_call_indices": [
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "intervention_sigma_values": [
+    8.400935309099816,
+    5.315194521796382,
+    3.256821519765537,
+    1.9233398370400518,
+    1.088170636545279,
+    0.5853481231945422,
+    0.29644228447915727,
+    0.13951646873101678
+  ],
+  "mode": "full",
+  "numpy": "2.4.0",
+  "observed_records": 9000,
+  "output_dir": "/mnt/pixstor/data/xggh8/zw-lab/e012_frequency_localization",
+  "outputs": {
+    "experiment_12_condition_summary.csv": {
+      "sha256": "855958318d34be0e1b6f4f3f5043098f11be23a191d469c476b62db6da0de6f2",
+      "size_bytes": 744
+    },
+    "experiment_12_factorial_contrasts.csv": {
+      "sha256": "e77798cab664ee6556b0c99d4ea44787161304c0130f61c4479ebc08b141a132",
+      "size_bytes": 231
+    },
+    "experiment_12_failures.csv": {
+      "sha256": "d3c2a337a8e6eeab836a7af2ab0b6eaed70be9a283f0a07a5329c40208d3726b",
+      "size_bytes": 352
+    },
+    "experiment_12_fid_metrics.json": {
+      "sha256": "37e5131df544828d473d43cdcd57649f501e4ce1b93e879529dc70ac064d1536",
+      "size_bytes": 8331
+    },
+    "experiment_12_full_mask_overlap.csv": {
+      "sha256": "114ecafa4542a72773f8565f4896b8e6f8eeeb3aeef8f7efaf443295b62a9f10",
+      "size_bytes": 373
+    },
+    "experiment_12_nn_diagnostics.csv": {
+      "sha256": "c975e141cd5fac310a58666aeaeb45bca24acdef22295586175ab982d5e64e33",
+      "size_bytes": 818
+    },
+    "experiment_12_per_sample.csv": {
+      "sha256": "d63a4aa1b980d0b49f4272f070805d36ae689b6f20a0f305803f7a9f1834db64",
+      "size_bytes": 5101735
+    },
+    "experiment_12_report.md": {
+      "sha256": "5af1fe80d9be71951523161970cb6da703fe207d99230c2b61f2e8f828b4b4ba",
+      "size_bytes": 2711
+    },
+    "experiment_12_validation.json": {
+      "sha256": "f79be4d00205e5fce042bc516c7b35d79c4da4f701f8a99211c363a83351e1a0",
+      "size_bytes": 855
+    }
+  },
+  "python": "3.13.11",
+  "python_executable": "/home/xggh8/miniconda3/bin/python",
+  "repository_commit": "13c20077a8bb292b2c7c1d2f91508786663272e1",
+  "sample_seed_range": [
+    50000,
+    50999
+  ],
+  "schema_version": 1,
+  "shared_state": true,
+  "slurm_job_id": "16822015",
+  "started_at_unix": 1787777606.6688118,
+  "swap_target": "denoiser_prediction",
+  "torch": "2.7.1+cu118",
+  "torch_file": "/home/xggh8/.local/lib/python3.13/site-packages/torch/__init__.py",
+  "training_executed": false,
+  "whole_denoiser_swap": false
+}

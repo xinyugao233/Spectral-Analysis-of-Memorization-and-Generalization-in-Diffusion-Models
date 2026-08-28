@@ -44,3 +44,6 @@ htmlcov/
 
 # Logs
 *.log
+
+# Local generated report and experiment output trees
+/outputs/

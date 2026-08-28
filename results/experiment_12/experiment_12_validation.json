@@ -1,0 +1,39 @@
+{
+  "band_counts": {
+    "B1": {
+      "effective_full_spectrum_modes": 113,
+      "stored_coefficients": 63
+    },
+    "B2": {
+      "effective_full_spectrum_modes": 140,
+      "stored_coefficients": 73
+    },
+    "B3": {
+      "effective_full_spectrum_modes": 124,
+      "stored_coefficients": 64
+    },
+    "B4": {
+      "effective_full_spectrum_modes": 152,
+      "stored_coefficients": 78
+    }
+  },
+  "bootstrap_resamples": 100000,
+  "bootstrap_seed": 0,
+  "causal_frequency_claim": false,
+  "e011_reference": {
+    "condition": "111_B1_B2_B3",
+    "fid_1k": 38.019,
+    "memorization_rate": 0.761
+  },
+  "expected_records": 9000,
+  "failure_count": 0,
+  "fid_1k_role": "descriptive_only",
+  "finite_nearest_neighbor_records": true,
+  "observed_records": 9000,
+  "seed_range": [
+    50000,
+    50999
+  ],
+  "status": "pass",
+  "unique_keys": 9000
+}

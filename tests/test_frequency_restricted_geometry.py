@@ -314,7 +314,7 @@ class FrequencyRestrictedRepositoryTests(unittest.TestCase):
         self.assertIn("High `9..10`", protocol)
 
     def test_documentation_states_four_curves_and_rank_limitations(self) -> None:
-        readme = (REPO_ROOT / "README.md").read_text()
+        research_record = (REPO_ROOT / "docs" / "research_record.md").read_text()
         results = (
             REPO_ROOT
             / "docs"
@@ -325,23 +325,32 @@ class FrequencyRestrictedRepositoryTests(unittest.TestCase):
             / "docs"
             / "experiment_04b_frequency_restricted_geometry_protocol.md"
         ).read_text()
-        self.assertIn("two curves in the low-frequency subspace", readme)
-        self.assertIn("two curves in the\nhigh-frequency subspace", readme)
+        self.assertIn("two curves in the low-frequency subspace", research_record)
+        self.assertIn("two curves in the\nhigh-frequency subspace", research_record)
         for quantity in (
             "C_low_sigma(p,D)",
             "W_low_sigma(D)",
             "C_high_sigma(p,D)",
             "W_high_sigma(D)",
         ):
-            self.assertIn(quantity, readme)
-        self.assertIn("E004B = frequency-restricted data geometry", readme)
-        self.assertIn("E005  = frequency-restricted denoising residual energy", readme)
-        self.assertIn("ranks, `147` and `2925`", readme)
-        self.assertIn("does not isolate frequency", readme)
-        self.assertIn("subspace dimension, covariance, or energy structure", readme)
-        self.assertIn("Coverage alone does not exhibit the same ordering", readme)
-        self.assertNotIn("low-frequency coverage occurs earlier", readme.lower())
-        self.assertNotIn("low frequencies cause memorization", readme.lower())
+            self.assertIn(quantity, research_record)
+        self.assertIn("E004B = frequency-restricted data geometry", research_record)
+        self.assertIn(
+            "E005  = frequency-restricted denoising residual energy",
+            research_record,
+        )
+        self.assertIn("ranks, `147` and `2925`", research_record)
+        self.assertIn("does not isolate frequency", research_record)
+        self.assertIn(
+            "subspace dimension, covariance, or energy structure", research_record
+        )
+        self.assertIn(
+            "Coverage alone does not exhibit the same ordering", research_record
+        )
+        self.assertNotIn(
+            "low-frequency coverage occurs earlier", research_record.lower()
+        )
+        self.assertNotIn("low frequencies cause memorization", research_record.lower())
         self.assertIn("### Required Future Controls", results)
         self.assertIn("rank-matched random subspaces", results)
         self.assertIn("rank-and-power-matched", results)

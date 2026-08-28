@@ -4,10 +4,14 @@ Protocols freeze decisions before execution. Result documents report the
 validated run without changing those decisions. Provenance documents connect
 external data and checkpoints to exact hashes and commits.
 
-Start with the [canonical experimental pipeline](canonical_experiment_pipeline.md).
-It freezes the order E004 cutoff -> E004A full-space geometry -> E004B
-frequency-restricted geometry -> E005 spectral interpretation -> historical
-E006 exploration -> proposed E007/E008 interventions.
+The [full research record](research_record.md) preserves the detailed E001-E012
+chronology, negative results, mathematical definitions, and provenance that
+are intentionally condensed in the public README.
+
+For the public intervention story, start with the root README, then read the
+E011 Fourier-swap protocol/results and the E012 localization protocol/results.
+The [canonical experimental pipeline](canonical_experiment_pipeline.md)
+preserves the earlier E004-E010 geometry, residual, and whole-denoiser lineage.
 
 ## E004: Operational CIFAR-10 Cutoff
 
@@ -145,11 +149,13 @@ middle frequencies cause memorization.
 ## E012: Radial Frequency Localization
 
 1. [Frozen protocol](experiment_12_frequency_localization_protocol.md)
+2. [Validated results](experiment_12_frequency_localization_results.md)
 
 E012 holds E011's calls `6..13` fixed and partitions the successful radial
 mask into B1 `0<=r<=6`, B2 `6<r<=9`, and B3 `9<r<=11`. It preregisters all
-eight factorial subsets plus adjacent control B4 `11<r<=13`. Implementation
-and guarded smoke validation precede any explicitly authorized full run.
+eight factorial subsets plus adjacent control B4 `11<r<=13`. The completed
+9,000-record run found a dominant B1 x B2 interaction of `+52.35` percentage
+points with CI `[+49.75, +54.95]`; the adjacent B4 control remained at `0.0%`.
 
 ## Pipeline Audit
 
@@ -160,9 +166,10 @@ the baseline-pair gate. It changes no scientific artifacts.
 
 ## Reading Order
 
-New readers should start with the [root README](../README.md), then the
-canonical pipeline, E004 decision, E004A source audit and results, E005
-results, historical E006 results, and blocked E007 protocol.
+New readers should start with the [root README](../README.md), then E011 and
+E012. Readers tracing how the project reached those interventions can continue
+through the canonical pipeline, E004 decision, E004A/E004B geometry, E005
+residual results, and the historical E006-E010 records.
 Reviewers auditing a specific experiment should read its protocol before its
 result document and then inspect the linked compact [`results/`](../results/)
 and [`figures/`](../figures/) directories.

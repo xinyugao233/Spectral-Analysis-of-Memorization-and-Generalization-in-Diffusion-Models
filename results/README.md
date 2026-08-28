@@ -146,6 +146,23 @@ The 3,584-row per-sample table and generated samples remain external at
 asymmetric baselines and does not execute or revise E008. See the
 [E010 results document](../docs/experiment_10_directional_memorization_transfer_results.md).
 
+## E011 Fourier-Component Swap
+
+[`experiment_11/`](experiment_11/) contains the compact eight-condition
+summary, paired effects, radial-versus-square comparison, FID-1K records,
+execution manifest, and validation record. Raw samples, generated FID images,
+and per-sample nearest-neighbor rows remain external. The radial `G <- M`
+condition reached `76.1%` memorization and the matched square reached `73.7%`.
+
+## E012 Radial Frequency Localization
+
+[`experiment_12/`](experiment_12/) contains the nine-condition summary,
+factorial contrasts, full-mask overlap, nearest-neighbor diagnostics, FID-1K
+records, execution manifest, and validation record. The full `r <= 11`
+condition exactly reproduces E011 at `76.1%`; B1+B2 reaches `62.2%`, and the
+dominant B1 x B2 interaction is `+52.35` percentage points. The 5.1 MB
+per-sample table, 9,000 raw samples, and 9,000 FID images remain external.
+
 ## Artifact Policy
 
 Commit an output only when it is small, deterministic, reviewable, and needed

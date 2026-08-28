@@ -90,6 +90,7 @@ class RegionDefinitionRepositoryTests(unittest.TestCase):
         ) as handle:
             cls.rows = list(csv.DictReader(handle))
         cls.readme = (REPO_ROOT / "README.md").read_text()
+        cls.research_record = (REPO_ROOT / "docs" / "research_record.md").read_text()
         cls.e006_protocol = (
             REPO_ROOT / "docs" / "experiment_06_transition_swap_protocol.md"
         ).read_text()
@@ -198,30 +199,39 @@ class RegionDefinitionRepositoryTests(unittest.TestCase):
 
     def test_readme_exposes_main_story_before_provenance(self) -> None:
         for stage in (
-            "-> E004: freeze r = 4",
-            "-> E004B: low/high coverage and posterior geometry",
-            "-> E010: whole-denoiser swaps",
-            "-> high-derived suppression supported",
+            "diffusion memorization geometry",
+            "-> controlled Fourier swapping",
+            "-> memorization transfer",
+            "-> radial frequency localization",
         ):
             self.assertIn(stage, self.readme)
 
         hierarchy = (
-            "## Main Result",
-            "## From Shell Geometry To Intervention",
-            "### Why A Candidate Danger Region Should Exist",
-            "### Find Low- And High-Frequency Candidate Regions",
-            "### Test The Predicted Sigma Locations",
-            "## Detailed Research Record",
+            "## Key Result",
+            "## Why This Project?",
+            "## Experimental Idea",
+            "## Main Findings",
+            "## Experimental Controls",
+            "## What The Results Do And Do Not Show",
+            "## Reproduction",
+            "## Repository Layout",
+            "## Experiment Index",
+            "## Limitations",
         )
         positions = [self.readme.index(heading) for heading in hierarchy]
         self.assertEqual(positions, sorted(positions))
+        self.assertIn("[full research record](docs/research_record.md)", self.readme)
+        self.assertNotIn("## Detailed Research Record", self.readme)
 
-        for experiment_id in range(1, 11):
-            self.assertIn(f"### E{experiment_id:03d}:", self.readme)
-        self.assertIn("**E006** was formally `INCONCLUSIVE`", self.readme)
-        self.assertIn("`PROPOSED — BLOCKED BY KNOWN BASELINE DEGENERACY`", self.readme)
-        self.assertIn("E008 is `RETIRED_UNEXECUTED`", self.readme)
-        self.assertNotIn("## Canonical Experimental Pipeline", self.readme)
+        for experiment_id in range(1, 13):
+            self.assertIn(f"### E{experiment_id:03d}:", self.research_record)
+        self.assertIn("**E006** was formally `INCONCLUSIVE`", self.research_record)
+        self.assertIn(
+            "`PROPOSED — BLOCKED BY KNOWN BASELINE DEGENERACY`",
+            self.research_record,
+        )
+        self.assertIn("E008 is `RETIRED_UNEXECUTED`", self.research_record)
+        self.assertNotIn("## Canonical Experimental Pipeline", self.research_record)
 
     def test_e006_is_historical_not_final(self) -> None:
         historical = self.pipeline["stage_5_historical_swap"]
@@ -229,8 +239,8 @@ class RegionDefinitionRepositoryTests(unittest.TestCase):
             historical["role"], "exploratory spectral-aligned intervention"
         )
         self.assertEqual(historical["formal_outcome"], "INCONCLUSIVE")
-        self.assertIn("**E006** was formally `INCONCLUSIVE`", self.readme)
-        self.assertNotIn("E006: Final Geometry-Aligned", self.readme)
+        self.assertIn("**E006** was formally `INCONCLUSIVE`", self.research_record)
+        self.assertNotIn("E006: Final Geometry-Aligned", self.research_record)
 
     def test_e007_is_the_blocked_full_space_stage(self) -> None:
         final_stage = self.pipeline["stage_6_geometry_swap"]
@@ -238,15 +248,15 @@ class RegionDefinitionRepositoryTests(unittest.TestCase):
         self.assertEqual(final_stage["pre_control"], [6, 7])
         self.assertEqual(final_stage["post_control"], [10, 11])
         self.assertEqual(final_stage["status"], "blocked")
-        self.assertIn("**E007-E009** document blocked, retired", self.readme)
-        self.assertNotIn("E007 has been executed", self.readme)
+        self.assertIn("**E007-E009** document blocked, retired", self.research_record)
+        self.assertNotIn("E007 has been executed", self.research_record)
 
     def test_readme_preserves_inconclusive_historical_account(self) -> None:
-        self.assertIn("formally `INCONCLUSIVE`", self.readme)
-        self.assertIn("did not identify a", self.readme)
-        self.assertIn("memorization danger zone", self.readme)
-        self.assertNotIn("causal model-swap intervention", self.readme)
-        self.assertIn("q_C=q_W=0.8", self.readme)
+        self.assertIn("formally `INCONCLUSIVE`", self.research_record)
+        self.assertIn("did not identify a", self.research_record)
+        self.assertIn("memorization danger zone", self.research_record)
+        self.assertNotIn("causal model-swap intervention", self.research_record)
+        self.assertIn("q_C=q_W=0.8", self.research_record)
 
     def test_paper_reference_is_not_described_as_e004a_derived(self) -> None:
         required = (
