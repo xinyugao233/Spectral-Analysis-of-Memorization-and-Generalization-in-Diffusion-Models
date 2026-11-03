@@ -3,3 +3,7 @@ results/experiment_08_preflight/*.csv -text -whitespace
 results/experiment_09_stage_a/*.csv -text -whitespace
 results/experiment_09_stage_b/*.csv -text -whitespace
 results/experiment_10/*.csv -text -whitespace
+
+# Public LF exports keep their explicitly manifested bytes.
+results/experiment_11/*.csv -text -whitespace
+results/experiment_12/*.csv -text -whitespace

@@ -11,3 +11,4 @@ torchvision
 
 # Experiment utilities
 tqdm
+psutil

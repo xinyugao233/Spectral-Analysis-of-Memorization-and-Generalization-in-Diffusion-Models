@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "scope": "Derived presentation only; frozen scientific artifacts unchanged",
+  "sources": {
+    "results/experiment_12/experiment_12_condition_summary.csv": "95795600283beb2d2c775806f2f8964bdad1a4f40e4d5e87dd150076d9392a52"
+  },
+  "assets": {
+    "figures/presentation_v2/fourier_intervention.png": "9707ba16911db1ecb5e5d85faef5d9683d13166061506d57a599dc764bda6a63",
+    "figures/presentation_v2/fourier_intervention.svg": "26d826982f9bd789d57c8dd2581d0cd34cc207a1c2ebe30d72703eb5f8371d16"
+  }
+}

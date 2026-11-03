@@ -1,0 +1,126 @@
+Obtaining file://<diffusion-checkout>
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Obtaining file://<spectral-checkout>
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Checking if build backend supports build_editable: started
+  Checking if build backend supports build_editable: finished with status 'done'
+  Getting requirements to build editable: started
+  Getting requirements to build editable: finished with status 'done'
+  Preparing editable metadata (pyproject.toml): started
+  Preparing editable metadata (pyproject.toml): finished with status 'done'
+Collecting torch>=2.2 (from diffusion-models-from-scratch==0.1.0)
+  Using cached torch-2.15.0-cp313-cp313-macosx_14_0_arm64.whl.metadata (36 kB)
+Collecting torchvision>=0.17 (from diffusion-models-from-scratch==0.1.0)
+  Using cached torchvision-0.29.2-py3-none-macosx_14_0_arm64.whl.metadata (5.7 kB)
+Collecting matplotlib (from spectral-diffusion-playground==0.1.0)
+  Using cached matplotlib-3.11.2-cp313-cp313-macosx_11_0_arm64.whl.metadata (80 kB)
+Collecting numpy (from spectral-diffusion-playground==0.1.0)
+  Using cached numpy-2.5.4-cp313-cp313-macosx_14_0_arm64.whl.metadata (6.6 kB)
+Collecting opencv-python (from spectral-diffusion-playground==0.1.0)
+  Using cached opencv_python-5.0.0.93-cp37-abi3-macosx_13_0_arm64.whl.metadata (19 kB)
+Collecting pillow (from spectral-diffusion-playground==0.1.0)
+  Using cached pillow-13.0.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (9.1 kB)
+Collecting scipy (from spectral-diffusion-playground==0.1.0)
+  Using cached scipy-1.18.1-cp313-cp313-macosx_14_0_arm64.whl.metadata (62 kB)
+Collecting tqdm (from spectral-diffusion-playground==0.1.0)
+  Using cached tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+Collecting psutil (from spectral-diffusion-playground==0.1.0)
+  Using cached psutil-7.2.2-cp36-abi3-macosx_11_0_arm64.whl.metadata (22 kB)
+Collecting pytest>=8 (from diffusion-models-from-scratch==0.1.0)
+  Using cached pytest-9.2.0-py3-none-any.whl.metadata (7.9 kB)
+Collecting ruff>=0.6 (from diffusion-models-from-scratch==0.1.0)
+  Using cached ruff-0.17.3-py3-none-macosx_11_0_arm64.whl.metadata (20 kB)
+Collecting iniconfig>=2 (from pytest>=8->diffusion-models-from-scratch==0.1.0)
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting packaging>=24 (from pytest>=8->diffusion-models-from-scratch==0.1.0)
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pluggy<2,>=1.6 (from pytest>=8->diffusion-models-from-scratch==0.1.0)
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.15 (from pytest>=8->diffusion-models-from-scratch==0.1.0)
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting filelock (from torch>=2.2->diffusion-models-from-scratch==0.1.0)
+  Using cached filelock-4.2.7-py3-none-any.whl.metadata (2.0 kB)
+Collecting typing-extensions>=4.13.0 (from torch>=2.2->diffusion-models-from-scratch==0.1.0)
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting setuptools>=77.0.3 (from torch>=2.2->diffusion-models-from-scratch==0.1.0)
+  Using cached setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+Collecting sympy>=1.13.3 (from torch>=2.2->diffusion-models-from-scratch==0.1.0)
+  Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting networkx>=2.5.1 (from torch>=2.2->diffusion-models-from-scratch==0.1.0)
+  Using cached networkx-3.7-py3-none-any.whl.metadata (6.7 kB)
+Collecting jinja2 (from torch>=2.2->diffusion-models-from-scratch==0.1.0)
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting fsspec>=0.8.5 (from torch>=2.2->diffusion-models-from-scratch==0.1.0)
+  Using cached fsspec-2026.9.0-py3-none-any.whl.metadata (10 kB)
+Collecting contourpy>=1.0.1 (from matplotlib->spectral-diffusion-playground==0.1.0)
+  Using cached contourpy-1.4.0-cp313-cp313-macosx_11_0_arm64.whl.metadata (3.8 kB)
+Collecting cycler>=0.10 (from matplotlib->spectral-diffusion-playground==0.1.0)
+  Using cached cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+Collecting fonttools>=4.28.2 (from matplotlib->spectral-diffusion-playground==0.1.0)
+  Using cached fonttools-4.68.0-cp313-cp313-macosx_10_13_universal2.whl.metadata (139 kB)
+Collecting kiwisolver>=1.3.1 (from matplotlib->spectral-diffusion-playground==0.1.0)
+  Using cached kiwisolver-1.5.1-cp313-cp313-macosx_11_0_arm64.whl.metadata (5.2 kB)
+Collecting pyparsing>=3 (from matplotlib->spectral-diffusion-playground==0.1.0)
+  Using cached pyparsing-3.3.3-py3-none-any.whl.metadata (5.9 kB)
+Collecting python-dateutil>=2.7 (from matplotlib->spectral-diffusion-playground==0.1.0)
+  Using cached python_dateutil-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Collecting tzdata (from python-dateutil>=2.7->matplotlib->spectral-diffusion-playground==0.1.0)
+  Using cached tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy>=1.13.3->torch>=2.2->diffusion-models-from-scratch==0.1.0)
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting MarkupSafe>=2.0 (from jinja2->torch>=2.2->diffusion-models-from-scratch==0.1.0)
+  Using cached markupsafe-3.0.4-cp313-cp313-macosx_11_0_arm64.whl.metadata (2.7 kB)
+Using cached pytest-9.2.0-py3-none-any.whl (411 kB)
+Using cached ruff-0.17.3-py3-none-macosx_11_0_arm64.whl (9.4 MB)
+Using cached torch-2.15.0-cp313-cp313-macosx_14_0_arm64.whl (138.6 MB)
+Using cached torchvision-0.29.2-py3-none-macosx_14_0_arm64.whl (1.8 MB)
+Using cached pillow-13.0.0-cp313-cp313-macosx_11_0_arm64.whl (4.9 MB)
+Using cached matplotlib-3.11.2-cp313-cp313-macosx_11_0_arm64.whl (9.3 MB)
+Using cached numpy-2.5.4-cp313-cp313-macosx_14_0_arm64.whl (5.4 MB)
+Using cached opencv_python-5.0.0.93-cp37-abi3-macosx_13_0_arm64.whl (48.3 MB)
+Using cached psutil-7.2.2-cp36-abi3-macosx_11_0_arm64.whl (129 kB)
+Using cached scipy-1.18.1-cp313-cp313-macosx_14_0_arm64.whl (20.5 MB)
+Using cached tqdm-4.70.1-py3-none-any.whl (80 kB)
+Using cached contourpy-1.4.0-cp313-cp313-macosx_11_0_arm64.whl (285 kB)
+Using cached cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Using cached fonttools-4.68.0-cp313-cp313-macosx_10_13_universal2.whl (3.1 MB)
+Using cached fsspec-2026.9.0-py3-none-any.whl (221 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached kiwisolver-1.5.1-cp313-cp313-macosx_11_0_arm64.whl (64 kB)
+Using cached networkx-3.7-py3-none-any.whl (2.1 MB)
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Using cached pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Using cached python_dateutil-4.0.0-py3-none-any.whl (92 kB)
+Using cached setuptools-84.2.1-py3-none-any.whl (876 kB)
+Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached filelock-4.2.7-py3-none-any.whl (164 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached markupsafe-3.0.4-cp313-cp313-macosx_11_0_arm64.whl (12 kB)
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Using cached tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+Building wheels for collected packages: diffusion-models-from-scratch, spectral-diffusion-playground
+  Building editable for diffusion-models-from-scratch (pyproject.toml): started
+  Building editable for diffusion-models-from-scratch (pyproject.toml): finished with status 'done'
+  Created wheel for diffusion-models-from-scratch: filename=diffusion_models_from_scratch-0.1.0-0.editable-py3-none-any.whl size=5950 sha256=2c1b5dd0c35829d3b254f010474e9e75b6c56e428a8434f2a52c10fe641766b4
+  Stored in directory: <temporary-output>
+  Building editable for spectral-diffusion-playground (pyproject.toml): started
+  Building editable for spectral-diffusion-playground (pyproject.toml): finished with status 'done'
+  Created wheel for spectral-diffusion-playground: filename=spectral_diffusion_playground-0.1.0-0.editable-py3-none-any.whl size=8422 sha256=b75bff0c1b34bbe537acf81fa540b490e87b024cfdce41e8bf2bb1714ff507ee
+  Stored in directory: <temporary-output>
+Successfully built diffusion-models-from-scratch spectral-diffusion-playground
+Installing collected packages: mpmath, tzdata, typing-extensions, tqdm, sympy, setuptools, ruff, pyparsing, pygments, psutil, pluggy, pillow, packaging, numpy, networkx, MarkupSafe, kiwisolver, iniconfig, fsspec, fonttools, filelock, cycler, scipy, python-dateutil, pytest, opencv-python, jinja2, contourpy, torch, matplotlib, torchvision, spectral-diffusion-playground, diffusion-models-from-scratch
+Successfully installed MarkupSafe-3.0.4 contourpy-1.4.0 cycler-0.12.1 diffusion-models-from-scratch-0.1.0 filelock-4.2.7 fonttools-4.68.0 fsspec-2026.9.0 iniconfig-2.3.1 jinja2-3.1.6 kiwisolver-1.5.1 matplotlib-3.11.2 mpmath-1.3.0 networkx-3.7 numpy-2.5.4 opencv-python-5.0.0.93 packaging-26.3 pillow-13.0.0 pluggy-1.7.0 psutil-7.2.2 pygments-2.21.0 pyparsing-3.3.3 pytest-9.2.0 python-dateutil-4.0.0 ruff-0.17.3 scipy-1.18.1 setuptools-84.2.1 spectral-diffusion-playground-0.1.0 sympy-1.14.0 torch-2.15.0 torchvision-0.29.2 tqdm-4.70.1 typing-extensions-4.16.0 tzdata-2026.6
+
+[notice] A new release of pip is available: 25.0 -> 26.3
+[notice] To update, run: <review-environment>/bin/python -m pip install --upgrade pip

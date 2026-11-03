@@ -139,7 +139,7 @@ class StatefulInfiniteSampler(torch.utils.data.Sampler[int]):
             raise ValueError("Sampler rank is outside the replica range")
         if not 0 <= window_size <= 1:
             raise ValueError("Sampler window_size must be in [0,1]")
-        super().__init__(dataset)
+        super().__init__()
         self.dataset = dataset
         self.rank = rank
         self.num_replicas = num_replicas

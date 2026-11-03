@@ -1,5 +1,16 @@
 # Full Research Record
 
+> Interpretation clarification (2026-11-02): memorization is the strict
+> Euclidean d1 < d2/3 criterion against the same frozen 1,000-image training
+> reference bank. G's zero observed hits do not establish absence of memorization
+> across its entire 50K training set. The 1,000 seeds are generation seeds for
+> one fixed checkpoint pair, not independent model-training replications.
+> All-zero empirical-bootstrap intervals do not prove an exactly zero population
+> effect. FID-1K is descriptive; reverse M-from-G suppression coincides with
+> substantial quality degradation. E012 interaction means nonadditivity of this
+> binary outcome under its frozen finite-difference scaling.
+
+
 This document preserves the complete experiment-by-experiment methods, negative results, provenance, and limitations behind the public project summary. Start with the [root README](../README.md) for the concise research story.
 
 ## Detailed Research Record
@@ -374,9 +385,9 @@ paired bootstrap 95% CI:                      [6.84%, 14.84%]
 
 Only high-derived suppression passed the preregistered influence criterion:
 **`HIGH_DERIVED_SUPPRESSION_SUPPORTED`**. Low-derived suppression was not
-supported. Induction was not supported and was floor-limited by the EDM-50K
-recipient: no memorized samples were observed for its `0/256` no-swap baseline
-under the frozen E010 seeds.
+supported. Induction yielded 0–1 flagged samples out of 256 per condition;
+neither target outperformed its controls. The 0/256 baseline does not itself
+floor-limit detecting an increase. This corrects the earlier interpretation.
 
 At the low-derived candidate `sigma = 3.2568`, the final memorization rate was
 `188/256 = 73.44%`; the later neighboring control was lower at
@@ -612,9 +623,10 @@ interventions and neither supports universal frequency causality.
 - E006 uses 256 seeds and a strict pixel-space criterion. Its degenerate
   EDM-50K baseline triggers the frozen safeguard and prevents a directional
   conclusion.
-- E010 uses intentionally asymmetric baselines. Its EDM-50K floor limits
-  induction sensitivity, and its whole-denoiser swaps do not identify an
-  isolated frequency-component or dataset-size effect.
+- E010 uses intentionally asymmetric baselines. Its induction targets did not
+  outperform controls (0–1/256 per condition); a zero baseline does not itself
+  limit detecting an increase. Whole-denoiser swaps do not identify an isolated
+  frequency-component or dataset-size effect.
 - E011/E012 demonstrate a causal intervention on one memorizing/generalizing
   model pair; they do not establish generality across checkpoints, datasets,
   architectures, or samplers.

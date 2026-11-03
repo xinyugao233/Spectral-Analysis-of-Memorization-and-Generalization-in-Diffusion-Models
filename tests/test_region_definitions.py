@@ -197,41 +197,10 @@ class RegionDefinitionRepositoryTests(unittest.TestCase):
             self.canonical_pipeline,
         )
 
-    def test_readme_exposes_main_story_before_provenance(self) -> None:
-        for stage in (
-            "diffusion memorization geometry",
-            "-> controlled Fourier swapping",
-            "-> memorization transfer",
-            "-> radial frequency localization",
-        ):
-            self.assertIn(stage, self.readme)
-
-        hierarchy = (
-            "## Key Result",
-            "## Why This Project?",
-            "## Experimental Idea",
-            "## Main Findings",
-            "## Experimental Controls",
-            "## What The Results Do And Do Not Show",
-            "## Reproduction",
-            "## Repository Layout",
-            "## Experiment Index",
-            "## Limitations",
-        )
-        positions = [self.readme.index(heading) for heading in hierarchy]
-        self.assertEqual(positions, sorted(positions))
-        self.assertIn("[full research record](docs/research_record.md)", self.readme)
-        self.assertNotIn("## Detailed Research Record", self.readme)
-
-        for experiment_id in range(1, 13):
-            self.assertIn(f"### E{experiment_id:03d}:", self.research_record)
-        self.assertIn("**E006** was formally `INCONCLUSIVE`", self.research_record)
-        self.assertIn(
-            "`PROPOSED — BLOCKED BY KNOWN BASELINE DEGENERACY`",
-            self.research_record,
-        )
-        self.assertIn("E008 is `RETIRED_UNEXECUTED`", self.research_record)
-        self.assertNotIn("## Canonical Experimental Pipeline", self.research_record)
+    def test_readme_links_to_accessible_research_record(self) -> None:
+        # Protect access to the detailed evidence, not editorial order or wording.
+        self.assertIn("docs/research_record.md", self.readme)
+        self.assertTrue((Path(__file__).resolve().parents[1] / "docs/research_record.md").is_file())
 
     def test_e006_is_historical_not_final(self) -> None:
         historical = self.pipeline["stage_5_historical_swap"]

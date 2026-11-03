@@ -1,5 +1,16 @@
 # E012 Radial Frequency Localization Results
 
+> Interpretation clarification (2026-11-02): memorization is the strict
+> Euclidean d1 < d2/3 criterion against the same frozen 1,000-image training
+> reference bank. G's zero observed hits do not establish absence of memorization
+> across its entire 50K training set. The 1,000 seeds are generation seeds for
+> one fixed checkpoint pair, not independent model-training replications.
+> All-zero empirical-bootstrap intervals do not prove an exactly zero population
+> effect. FID-1K is descriptive; reverse M-from-G suppression coincides with
+> substantial quality degradation. E012 interaction means nonadditivity of this
+> binary outcome under its frozen finite-difference scaling.
+
+
 Generated from the frozen E012 full run. Interpretation must remain frequency-localization within calls `6..13`; no claim that middle frequencies cause memorization is supported.
 
 ## E011 Positive-Control Comparison

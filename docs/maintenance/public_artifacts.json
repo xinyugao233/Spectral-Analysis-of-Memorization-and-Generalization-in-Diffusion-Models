@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "policy": "Exact bytes; no runtime normalization. Historical manifests unchanged.",
+  "entries": [
+    {
+      "path": "results/experiment_10/experiment_10_condition_summary.csv",
+      "original_sha256": "3df5d6352fdc446b165748fac9c04096eefe5a689a9f9fbf48f8d2b708d08d0c",
+      "original_size_bytes": 770,
+      "source_manifest": "results/experiment_10/experiment_10_manifest.json",
+      "source_location": "results/experiment_10/experiment_10_manifest.json :: experiment_10_condition_summary.csv",
+      "public_sha256": "3df5d6352fdc446b165748fac9c04096eefe5a689a9f9fbf48f8d2b708d08d0c",
+      "public_size_bytes": 770,
+      "representation": "identity"
+    },
+    {
+      "path": "results/experiment_10/experiment_10_directional_analysis.csv",
+      "original_sha256": "622b8d8b91284d34d2e8f453f9e536c41fcbb909c8ea1c235e2dbfc35ed018a3",
+      "original_size_bytes": 407,
+      "source_manifest": "results/experiment_10/experiment_10_manifest.json",
+      "source_location": "results/experiment_10/experiment_10_manifest.json :: experiment_10_directional_analysis.csv",
+      "public_sha256": "622b8d8b91284d34d2e8f453f9e536c41fcbb909c8ea1c235e2dbfc35ed018a3",
+      "public_size_bytes": 407,
+      "representation": "identity"
+    },
+    {
+      "path": "results/experiment_10/experiment_10_failures.csv",
+      "original_sha256": "675ce3441af8b6c43de05a7383dfcc4b5d60365efccada0569af7c9f54525ef5",
+      "original_size_bytes": 245,
+      "source_manifest": "results/experiment_10/experiment_10_manifest.json",
+      "source_location": "results/experiment_10/experiment_10_manifest.json :: experiment_10_failures.csv",
+      "public_sha256": "675ce3441af8b6c43de05a7383dfcc4b5d60365efccada0569af7c9f54525ef5",
+      "public_size_bytes": 245,
+      "representation": "identity"
+    },
+    {
+      "path": "results/experiment_10/experiment_10_generated_samples.npz",
+      "original_sha256": "d766900963648213bbaed982178779a802a4bf473fbecffe1dd9580ae910f584",
+      "original_size_bytes": 46513415,
+      "source_manifest": "results/experiment_10/experiment_10_manifest.json",
+      "source_location": "results/experiment_10/experiment_10_manifest.json :: experiment_10_generated_samples.npz",
+      "public_sha256": null,
+      "public_size_bytes": null,
+      "representation": "external original bytes required"
+    },
+    {
+      "path": "results/experiment_10/experiment_10_outcome.json",
+      "original_sha256": "01e4c34a5356c07015b306e9d38441608e15da9f32636bdfd02e0479943ccfe7",
+      "original_size_bytes": 1476,
+      "source_manifest": "results/experiment_10/experiment_10_manifest.json",
+      "source_location": "results/experiment_10/experiment_10_manifest.json :: experiment_10_outcome.json",
+      "public_sha256": "01e4c34a5356c07015b306e9d38441608e15da9f32636bdfd02e0479943ccfe7",
+      "public_size_bytes": 1476,
+      "representation": "identity"
+    },
+    {
+      "path": "results/experiment_10/experiment_10_paired_transitions.csv",
+      "original_sha256": "74d4e93ec70014dce11c3bae5026831212e011d5fab5550f4cdfa32fbd224475",
+      "original_size_bytes": 588,
+      "source_manifest": "results/experiment_10/experiment_10_manifest.json",
+      "source_location": "results/experiment_10/experiment_10_manifest.json :: experiment_10_paired_transitions.csv",
+      "public_sha256": "74d4e93ec70014dce11c3bae5026831212e011d5fab5550f4cdfa32fbd224475",
+      "public_size_bytes": 588,
+      "representation": "identity"
+    },
+    {
+      "path": "results/experiment_10/experiment_10_per_sample.csv",
+      "original_sha256": "20445c2d09da072ce34a9e0ac1763223a7b73fde23ac0b56811b4b9e5f5b532c",
+      "original_size_bytes": 1195164,
+      "source_manifest": "results/experiment_10/experiment_10_manifest.json",
+      "source_location": "results/experiment_10/experiment_10_manifest.json :: experiment_10_per_sample.csv",
+      "public_sha256": null,
+      "public_size_bytes": null,
+      "representation": "external original bytes required"
+    },
+    {
+      "path": "results/experiment_10/experiment_10_validation.json",
+      "original_sha256": "3cbcbad96bab3b7bb257e66ada7f7c7f86dc7b50036a8258b43d466572dddfa5",
+      "original_size_bytes": 544,
+      "source_manifest": "results/experiment_10/experiment_10_manifest.json",
+      "source_location": "results/experiment_10/experiment_10_manifest.json :: experiment_10_validation.json",
+      "public_sha256": "3cbcbad96bab3b7bb257e66ada7f7c7f86dc7b50036a8258b43d466572dddfa5",
+      "public_size_bytes": 544,
+      "representation": "identity"
+    },
+    {
+      "path": "results/experiment_11/experiment_11_condition_summary.csv",
+      "original_sha256": "97f6126d2ddf7a8a0c5ce51a897d71a0d2caa0628734473337e19ad544f74427",
+      "original_size_bytes": 623,
+      "source_manifest": "results/experiment_11/experiment_11_manifest.json",
+      "source_location": "results/experiment_11/experiment_11_manifest.json :: experiment_11_condition_summary.csv",
+      "public_sha256": "35a1c3d763108043593c681a78ba13dc563d1167784c8e3f81941323c24b13c4",
+      "public_size_bytes": 614,
+      "representation": "original CRLF -> public LF (exact inverse hash verified)"
+    },
+    {
+      "path": "results/experiment_11/experiment_11_failures.csv",
+      "original_sha256": "14b869f2587f555ceb076121f311d68aab7d3e7aca3f4eae7cc1032091c7cef6",
+      "original_size_bytes": 378,
+      "source_manifest": "results/experiment_11/experiment_11_manifest.json",
+      "source_location": "results/experiment_11/experiment_11_manifest.json :: experiment_11_failures.csv",
+      "public_sha256": null,
+      "public_size_bytes": null,
+      "representation": "external original bytes required"
+    },
+    {
+      "path": "results/experiment_11/experiment_11_fid_metrics.json",
+      "original_sha256": "eb9a8a208cbbf8fd95b8c500176eba13cba8664b2967fdc8ba3dc424abc0da3f",
+      "original_size_bytes": 8060,
+      "source_manifest": "results/experiment_11/experiment_11_manifest.json",
+      "source_location": "results/experiment_11/experiment_11_manifest.json :: experiment_11_fid_metrics.json",
+      "public_sha256": "eb9a8a208cbbf8fd95b8c500176eba13cba8664b2967fdc8ba3dc424abc0da3f",
+      "public_size_bytes": 8060,
+      "representation": "identity"
+    },
+    {
+      "path": "results/experiment_11/experiment_11_mask_comparison.csv",
+      "original_sha256": "183326031a39c8f9432ac9cbd22243e90f46900384322d3a9c49441b0e2cf90d",
+      "original_size_bytes": 155,
+      "source_manifest": "results/experiment_11/experiment_11_manifest.json",
+      "source_location": "results/experiment_11/experiment_11_manifest.json :: experiment_11_mask_comparison.csv",
+      "public_sha256": "090664d470d5110244c99a6b1851f628c91d543bc6dbc550eba406bb7f3c7ae1",
+      "public_size_bytes": 152,
+      "representation": "original CRLF -> public LF (exact inverse hash verified)"
+    },
+    {
+      "path": "results/experiment_11/experiment_11_paired_effects.csv",
+      "original_sha256": "27cc85abc47781d36eab538854fa8d23689b5d14bc7b45ec94b2ec90c745554e",
+      "original_size_bytes": 337,
+      "source_manifest": "results/experiment_11/experiment_11_manifest.json",
+      "source_location": "results/experiment_11/experiment_11_manifest.json :: experiment_11_paired_effects.csv",
+      "public_sha256": "d8473441c1fc8a3f9fc22f5a3123c6b0f7597dd22e9e43796dc1697fe02384e7",
+      "public_size_bytes": 332,
+      "representation": "original CRLF -> public LF (exact inverse hash verified)"
+    },
+    {
+      "path": "results/experiment_11/experiment_11_per_sample.csv",
+      "original_sha256": "1f3e8138279c1aa7b26951f9bf8dca4921ae8ac48b7f2909ea524b0e13a091b9",
+      "original_size_bytes": 4397290,
+      "source_manifest": "results/experiment_11/experiment_11_manifest.json",
+      "source_location": "results/experiment_11/experiment_11_manifest.json :: experiment_11_per_sample.csv",
+      "public_sha256": null,
+      "public_size_bytes": null,
+      "representation": "external original bytes required"
+    },
+    {
+      "path": "results/experiment_11/experiment_11_validation.json",
+      "original_sha256": "d321d5614c2778df1cdcbad5a37b90bfdee62ee5f3ee04656d37a64a706fdcd7",
+      "original_size_bytes": 779,
+      "source_manifest": "results/experiment_11/experiment_11_manifest.json",
+      "source_location": "results/experiment_11/experiment_11_manifest.json :: experiment_11_validation.json",
+      "public_sha256": "d321d5614c2778df1cdcbad5a37b90bfdee62ee5f3ee04656d37a64a706fdcd7",
+      "public_size_bytes": 779,
+      "representation": "identity"
+    },
+    {
+      "path": "results/experiment_12/experiment_12_condition_summary.csv",
+      "original_sha256": "855958318d34be0e1b6f4f3f5043098f11be23a191d469c476b62db6da0de6f2",
+      "original_size_bytes": 744,
+      "source_manifest": "results/experiment_12/experiment_12_manifest.json",
+      "source_location": "results/experiment_12/experiment_12_manifest.json :: experiment_12_condition_summary.csv",
+      "public_sha256": "95795600283beb2d2c775806f2f8964bdad1a4f40e4d5e87dd150076d9392a52",
+      "public_size_bytes": 734,
+      "representation": "original CRLF -> public LF (exact inverse hash verified)"
+    },
+    {
+      "path": "results/experiment_12/experiment_12_factorial_contrasts.csv",
+      "original_sha256": "e77798cab664ee6556b0c99d4ea44787161304c0130f61c4479ebc08b141a132",
+      "original_size_bytes": 231,
+      "source_manifest": "results/experiment_12/experiment_12_manifest.json",
+      "source_location": "results/experiment_12/experiment_12_manifest.json :: experiment_12_factorial_contrasts.csv",
+      "public_sha256": "4a8e8310ada273f0491bb67e2c9b11a884f530511fca62d4c71b01197dec131c",
+      "public_size_bytes": 223,
+      "representation": "original CRLF -> public LF (exact inverse hash verified)"
+    },
+    {
+      "path": "results/experiment_12/experiment_12_failures.csv",
+      "original_sha256": "d3c2a337a8e6eeab836a7af2ab0b6eaed70be9a283f0a07a5329c40208d3726b",
+      "original_size_bytes": 352,
+      "source_manifest": "results/experiment_12/experiment_12_manifest.json",
+      "source_location": "results/experiment_12/experiment_12_manifest.json :: experiment_12_failures.csv",
+      "public_sha256": "208403b12f031bc4e0163d69e80557f236a786497f1786d420585ca17f256701",
+      "public_size_bytes": 351,
+      "representation": "original CRLF -> public LF (exact inverse hash verified)"
+    },
+    {
+      "path": "results/experiment_12/experiment_12_fid_metrics.json",
+      "original_sha256": "37e5131df544828d473d43cdcd57649f501e4ce1b93e879529dc70ac064d1536",
+      "original_size_bytes": 8331,
+      "source_manifest": "results/experiment_12/experiment_12_manifest.json",
+      "source_location": "results/experiment_12/experiment_12_manifest.json :: experiment_12_fid_metrics.json",
+      "public_sha256": "37e5131df544828d473d43cdcd57649f501e4ce1b93e879529dc70ac064d1536",
+      "public_size_bytes": 8331,
+      "representation": "identity"
+    },
+    {
+      "path": "results/experiment_12/experiment_12_full_mask_overlap.csv",
+      "original_sha256": "114ecafa4542a72773f8565f4896b8e6f8eeeb3aeef8f7efaf443295b62a9f10",
+      "original_size_bytes": 373,
+      "source_manifest": "results/experiment_12/experiment_12_manifest.json",
+      "source_location": "results/experiment_12/experiment_12_manifest.json :: experiment_12_full_mask_overlap.csv",
+      "public_sha256": "b812a1587a9f0342fb488f02dc0098bcf63c7928a2d08f4c6fc77e8d704e2b29",
+      "public_size_bytes": 366,
+      "representation": "original CRLF -> public LF (exact inverse hash verified)"
+    },
+    {
+      "path": "results/experiment_12/experiment_12_nn_diagnostics.csv",
+      "original_sha256": "c975e141cd5fac310a58666aeaeb45bca24acdef22295586175ab982d5e64e33",
+      "original_size_bytes": 818,
+      "source_manifest": "results/experiment_12/experiment_12_manifest.json",
+      "source_location": "results/experiment_12/experiment_12_manifest.json :: experiment_12_nn_diagnostics.csv",
+      "public_sha256": "1780b7139722b8e043646b2735f2860d60a55f14c1975a93b5c479453623b3e2",
+      "public_size_bytes": 808,
+      "representation": "original CRLF -> public LF (exact inverse hash verified)"
+    },
+    {
+      "path": "results/experiment_12/experiment_12_per_sample.csv",
+      "original_sha256": "d63a4aa1b980d0b49f4272f070805d36ae689b6f20a0f305803f7a9f1834db64",
+      "original_size_bytes": 5101735,
+      "source_manifest": "results/experiment_12/experiment_12_manifest.json",
+      "source_location": "results/experiment_12/experiment_12_manifest.json :: experiment_12_per_sample.csv",
+      "public_sha256": null,
+      "public_size_bytes": null,
+      "representation": "external original bytes required"
+    },
+    {
+      "path": "results/experiment_12/experiment_12_report.md",
+      "original_sha256": "5af1fe80d9be71951523161970cb6da703fe207d99230c2b61f2e8f828b4b4ba",
+      "original_size_bytes": 2711,
+      "source_manifest": "results/experiment_12/experiment_12_manifest.json",
+      "source_location": "results/experiment_12/experiment_12_manifest.json :: experiment_12_report.md",
+      "public_sha256": null,
+      "public_size_bytes": null,
+      "representation": "external original bytes required"
+    },
+    {
+      "path": "results/experiment_12/experiment_12_validation.json",
+      "original_sha256": "f79be4d00205e5fce042bc516c7b35d79c4da4f701f8a99211c363a83351e1a0",
+      "original_size_bytes": 855,
+      "source_manifest": "results/experiment_12/experiment_12_manifest.json",
+      "source_location": "results/experiment_12/experiment_12_manifest.json :: experiment_12_validation.json",
+      "public_sha256": "f79be4d00205e5fce042bc516c7b35d79c4da4f701f8a99211c363a83351e1a0",
+      "public_size_bytes": 855,
+      "representation": "identity"
+    }
+  ]
+}

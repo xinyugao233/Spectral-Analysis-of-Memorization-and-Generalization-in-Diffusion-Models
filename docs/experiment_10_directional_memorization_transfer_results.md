@@ -143,8 +143,9 @@ and size 46,513,415 bytes. Neither is committed.
 ## Limitations
 
 - The model baselines are intentionally asymmetric and not matched.
-- The generalizing baseline is at the observed floor, limiting induction
-  sensitivity under this pair and criterion.
+- Induction yielded 0–1 flagged samples out of 256 per condition; neither
+  target outperformed controls. A zero baseline does not itself floor-limit
+  detecting an increase (correction to the previous interpretation).
 - E004B's low/high subspaces differ strongly in rank and other geometry.
 - E010 swaps the whole denoiser, not a Fourier component.
 - The result uses one model pair, one frozen 256-seed set, one sampler, and a

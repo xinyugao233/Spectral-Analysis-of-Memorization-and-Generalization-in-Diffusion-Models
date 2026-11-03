@@ -1,0 +1,111 @@
+{
+  "items": [
+    {
+      "role": "memorizing_model",
+      "source": "original run manifest :: network-snapshot-012000.pkl",
+      "sha256": "e5a7debafcd19191d6557f645216bfcb2e7589922396fd08130e76e3f5388b0a",
+      "size_bytes": 223159918,
+      "status": "VERIFIED remote bytes; not published",
+      "redistribution": "UNKNOWN; owner review",
+      "next_verification_command": "sha256sum /path/to/network-snapshot-012000.pkl"
+    },
+    {
+      "role": "generalizing_model",
+      "source": "original run manifest :: network-snapshot-040000.pkl",
+      "sha256": "a355ea67605dea3e2e663e94eb23416ffeb7679757088a68dc6228c03da5a92b",
+      "size_bytes": 223159918,
+      "status": "VERIFIED remote bytes; not published",
+      "redistribution": "UNKNOWN; owner review",
+      "next_verification_command": "sha256sum /path/to/network-snapshot-040000.pkl"
+    },
+    {
+      "role": "CIFAR reference archive",
+      "source": "original run manifest :: cifar10-32x32-train50k.zip",
+      "sha256": "795cdc1444465ae4e19e25a0615d05ba0a0e83caa5db6b1b811deaf4c7910dfa",
+      "size_bytes": 164500138,
+      "status": "VERIFIED remote bytes; not published",
+      "redistribution": "Dataset terms apply",
+      "next_verification_command": "sha256sum /path/to/cifar10-32x32-train50k.zip"
+    },
+    {
+      "role": "E011 FID detector",
+      "cache_path": "original run manifest :: 18d9c1159d16cd4cc6adf7db0f2dd2a9_https___api.ngc.nvidia.com_v2_models_nvidia_research_stylegan3_versions_1_files_metrics_inception-2015-12-05.pkl",
+      "sha256": "a31bd1d4522101109044ec28621a5fcb591ed6115e0d58104fc013fa01ef94f7",
+      "size_bytes": 95617399,
+      "url": "https://api.ngc.nvidia.com/v2/models/nvidia/research/stylegan3/versions/1/files/metrics/inception-2015-12-05.pkl",
+      "status": "VERIFIED recorded remote cache bytes; no new FID run",
+      "redistribution": "UNKNOWN; upstream terms apply",
+      "next_verification_command": "sha256sum /path/to/18d9c1159d16cd4cc6adf7db0f2dd2a9_https___api.ngc.nvidia.com_v2_models_nvidia_research_stylegan3_versions_1_files_metrics_inception-2015-12-05.pkl"
+    },
+    {
+      "role": "E011 FID reference",
+      "cache_path": "original run manifest :: fb5723973c843f2c5ec8c9c512572ae2_https___nvlabs-fi-cdn.nvidia.com_edm_fid-refs_cifar10-32x32.npz",
+      "sha256": "4ada108cdfd8e43409ed427f5f76631beac9b9617cdcaf416d41b1e161d85969",
+      "size_bytes": 33571316,
+      "url": "https://nvlabs-fi-cdn.nvidia.com/edm/fid-refs/cifar10-32x32.npz",
+      "status": "VERIFIED recorded remote cache bytes; no new FID run",
+      "redistribution": "UNKNOWN; upstream terms apply",
+      "next_verification_command": "sha256sum /path/to/fb5723973c843f2c5ec8c9c512572ae2_https___nvlabs-fi-cdn.nvidia.com_edm_fid-refs_cifar10-32x32.npz"
+    },
+    {
+      "role": "E011 fid_images",
+      "file_count": 8000,
+      "path": "original run manifest :: fid_images",
+      "size_bytes": 17983894,
+      "tree_sha256": "309a13ec9224d9738c71e95c1f763d2836494683bad80cc4edb5329c77c03a28",
+      "status": "EXTERNAL; manifest tree identity, not reverified",
+      "redistribution": "Owner review required",
+      "next_verification_command": "Use original manifest tree-hash algorithm in experiments/11_fourier_component_swap.py"
+    },
+    {
+      "role": "E011 raw_samples",
+      "file_count": 8000,
+      "path": "original run manifest :: raw_samples",
+      "size_bytes": 197632000,
+      "tree_sha256": "8edf4af767d66824c7cfcad9227e65cf51b184515443aecb513141da3cd7f000",
+      "status": "EXTERNAL; manifest tree identity, not reverified",
+      "redistribution": "Owner review required",
+      "next_verification_command": "Use original manifest tree-hash algorithm in experiments/11_fourier_component_swap.py"
+    },
+    {
+      "role": "E012 FID detector",
+      "cache_path": "original run manifest :: 18d9c1159d16cd4cc6adf7db0f2dd2a9_https___api.ngc.nvidia.com_v2_models_nvidia_research_stylegan3_versions_1_files_metrics_inception-2015-12-05.pkl",
+      "sha256": "a31bd1d4522101109044ec28621a5fcb591ed6115e0d58104fc013fa01ef94f7",
+      "size_bytes": 95617399,
+      "url": "https://api.ngc.nvidia.com/v2/models/nvidia/research/stylegan3/versions/1/files/metrics/inception-2015-12-05.pkl",
+      "status": "VERIFIED recorded remote cache bytes; no new FID run",
+      "redistribution": "UNKNOWN; upstream terms apply",
+      "next_verification_command": "sha256sum /path/to/18d9c1159d16cd4cc6adf7db0f2dd2a9_https___api.ngc.nvidia.com_v2_models_nvidia_research_stylegan3_versions_1_files_metrics_inception-2015-12-05.pkl"
+    },
+    {
+      "role": "E012 FID reference",
+      "cache_path": "original run manifest :: fb5723973c843f2c5ec8c9c512572ae2_https___nvlabs-fi-cdn.nvidia.com_edm_fid-refs_cifar10-32x32.npz",
+      "sha256": "4ada108cdfd8e43409ed427f5f76631beac9b9617cdcaf416d41b1e161d85969",
+      "size_bytes": 33571316,
+      "url": "https://nvlabs-fi-cdn.nvidia.com/edm/fid-refs/cifar10-32x32.npz",
+      "status": "VERIFIED recorded remote cache bytes; no new FID run",
+      "redistribution": "UNKNOWN; upstream terms apply",
+      "next_verification_command": "sha256sum /path/to/fb5723973c843f2c5ec8c9c512572ae2_https___nvlabs-fi-cdn.nvidia.com_edm_fid-refs_cifar10-32x32.npz"
+    },
+    {
+      "role": "E012 fid_images",
+      "file_count": 9000,
+      "path": "original run manifest :: fid_images",
+      "size_bytes": 19842113,
+      "tree_sha256": "2169709b3889d7c68095170cdfa89e35a3ae46af5130b779cced17eae4095bf8",
+      "status": "EXTERNAL; manifest tree identity, not reverified",
+      "redistribution": "Owner review required",
+      "next_verification_command": "Use original manifest tree-hash algorithm in experiments/12_frequency_localization.py"
+    },
+    {
+      "role": "E012 raw_samples",
+      "file_count": 9000,
+      "path": "original run manifest :: raw_samples",
+      "size_bytes": 222336000,
+      "tree_sha256": "08f9c7c143db53932cb336f9aa5a05c64fde3345bbc17faf8f64f0b0422d826b",
+      "status": "EXTERNAL; manifest tree identity, not reverified",
+      "redistribution": "Owner review required",
+      "next_verification_command": "Use original manifest tree-hash algorithm in experiments/12_frequency_localization.py"
+    }
+  ]
+}
