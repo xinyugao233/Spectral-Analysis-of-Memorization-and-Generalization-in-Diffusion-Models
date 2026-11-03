@@ -1,4 +1,7 @@
-# Maintenance verification — 2026-11-02
+# Initial local maintenance verification — 2026-11-02
+
+This record predates publication. See the [final review](publication-review.md)
+and [maintenance PR](https://github.com/xinyugao233/Spectral-Analysis-of-Memorization-and-Generalization-in-Diffusion-Models/pull/12) for subsequent publication and hosted checks.
 
 Local maintenance, CPU analysis and presentation are implemented. Authentic
 per-seed statistics were reproduced; model inference/FID were not rerun.

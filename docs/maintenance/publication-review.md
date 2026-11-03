@@ -20,8 +20,11 @@ source guide and conditional inference limits. New redundant analysis outputs
 and the recovered current EDM patch are retained privately, outside this PR.
 The exact historically executed dirty EDM tree remains unavailable.
 
-Hosted CI: pending the publication commit. A local pass is not a hosted pass;
-the linked PR/Actions run will provide the authoritative hosted result.
+Publication: the `codex/public-maintenance` branch was pushed without force
+and [PR #12](https://github.com/xinyugao233/Spectral-Analysis-of-Memorization-and-Generalization-in-Diffusion-Models/pull/12) opened against `main`. It has not been merged.
+Hosted CPU check status and logs are available in the
+[PR checks](https://github.com/xinyugao233/Spectral-Analysis-of-Memorization-and-Generalization-in-Diffusion-Models/pull/12/checks); consult the run for the exact head commit.
+A local pass is not a hosted pass.
 
 Artifact publication remains unapproved. Inventory hashes describe verified
 local files, not public downloads. Repository names, existing license text,

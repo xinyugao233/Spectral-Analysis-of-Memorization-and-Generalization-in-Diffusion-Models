@@ -1,11 +1,11 @@
 # Spectral Analysis of Diffusion Memorization
 
-[![CPU review](https://github.com/xinyugao233/Spectral-Analysis-of-Memorization-and-Generalization-in-Diffusion-Models/actions/workflows/cpu.yml/badge.svg)](https://github.com/xinyugao233/Spectral-Analysis-of-Memorization-and-Generalization-in-Diffusion-Models/actions/workflows/cpu.yml)
+[![CPU review](https://github.com/xinyugao233/Spectral-Analysis-of-Memorization-and-Generalization-in-Diffusion-Models/actions/workflows/cpu.yml/badge.svg?branch=codex%2Fpublic-maintenance)](https://github.com/xinyugao233/Spectral-Analysis-of-Memorization-and-Generalization-in-Diffusion-Models/actions/workflows/cpu.yml)
 
 **When can a diffusion model's denoiser predictions transfer memorization,
 and which Fourier bands participate?** This project studies one fixed pair of
 CIFAR-10 EDM checkpoints with frozen interventions and paired generation seeds.
-The new CPU workflow is staged locally; hosted CI has not yet run for this change.
+[Hosted CPU checks](https://github.com/xinyugao233/Spectral-Analysis-of-Memorization-and-Generalization-in-Diffusion-Models/pull/12/checks) run installation, tests, artifact verification and aggregate analysis.
 
 ## Main finding
 
@@ -109,7 +109,7 @@ Aggregate checks do not reproduce paired intervals or recover seed overlap.
 
 | Level | Inputs | Status |
 |---|---|---|
-| Code and CPU tests | Declared dependencies | Verified locally; hosted CI pending |
+| Code and CPU tests | Declared dependencies | Verified locally; [hosted checks](https://github.com/xinyugao233/Spectral-Analysis-of-Memorization-and-Generalization-in-Diffusion-Models/pull/12/checks) |
 | Aggregate consistency | Tracked summaries | Runnable from this checkout |
 | Paired analysis | Original per-sample CSVs | Recovered from Hellbender, exact hashes verified, results reproduced locally; publication pending |
 | Model inference | Trusted EDM checkpoints, archive/reference bank, executed source environment | External checkpoints identified and hashed; inference not rerun |
