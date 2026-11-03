@@ -1,0 +1,10 @@
+# CPU review environment, Python 3.13. Historical CUDA environments remain in manifests.
+torch==2.15.0
+torchvision==0.29.2
+numpy==2.5.4
+scipy==1.18.1
+matplotlib==3.11.2
+psutil==7.2.2
+pillow==13.0.0
+opencv-python==5.0.0.93
+tqdm==4.70.1

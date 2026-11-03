@@ -1,0 +1,85 @@
+{
+  "date": "2026-11-02",
+  "items": [
+    {
+      "file": "experiment_10_failures.csv",
+      "sha256": "675ce3441af8b6c43de05a7383dfcc4b5d60365efccada0569af7c9f54525ef5",
+      "size_bytes": 245,
+      "source": "results/experiment_10/experiment_10_manifest.json :: experiment_10_failures.csv",
+      "source_manifest": "results/experiment_10/experiment_10_manifest.json",
+      "expected_sha256": "675ce3441af8b6c43de05a7383dfcc4b5d60365efccada0569af7c9f54525ef5",
+      "availability": "VERIFIED locally; not published",
+      "redistribution": "Owner decision pending"
+    },
+    {
+      "file": "experiment_10_generated_samples.npz",
+      "sha256": "d766900963648213bbaed982178779a802a4bf473fbecffe1dd9580ae910f584",
+      "size_bytes": 46513415,
+      "source": "results/experiment_10/experiment_10_manifest.json :: experiment_10_generated_samples.npz",
+      "source_manifest": "results/experiment_10/experiment_10_manifest.json",
+      "expected_sha256": "d766900963648213bbaed982178779a802a4bf473fbecffe1dd9580ae910f584",
+      "availability": "VERIFIED locally; not published",
+      "redistribution": "Owner decision pending"
+    },
+    {
+      "file": "experiment_10_per_sample.csv",
+      "sha256": "20445c2d09da072ce34a9e0ac1763223a7b73fde23ac0b56811b4b9e5f5b532c",
+      "size_bytes": 1195164,
+      "source": "results/experiment_10/experiment_10_manifest.json :: experiment_10_per_sample.csv",
+      "source_manifest": "results/experiment_10/experiment_10_manifest.json",
+      "expected_sha256": "20445c2d09da072ce34a9e0ac1763223a7b73fde23ac0b56811b4b9e5f5b532c",
+      "availability": "VERIFIED locally; not published",
+      "redistribution": "Owner decision pending"
+    },
+    {
+      "file": "experiment_11_failures.csv",
+      "sha256": "14b869f2587f555ceb076121f311d68aab7d3e7aca3f4eae7cc1032091c7cef6",
+      "size_bytes": 378,
+      "source": "results/experiment_11/experiment_11_manifest.json :: experiment_11_failures.csv",
+      "source_manifest": "results/experiment_11/experiment_11_manifest.json",
+      "expected_sha256": "14b869f2587f555ceb076121f311d68aab7d3e7aca3f4eae7cc1032091c7cef6",
+      "availability": "VERIFIED locally; not published",
+      "redistribution": "Owner decision pending"
+    },
+    {
+      "file": "experiment_11_per_sample.csv",
+      "sha256": "1f3e8138279c1aa7b26951f9bf8dca4921ae8ac48b7f2909ea524b0e13a091b9",
+      "size_bytes": 4397290,
+      "source": "results/experiment_11/experiment_11_manifest.json :: experiment_11_per_sample.csv",
+      "source_manifest": "results/experiment_11/experiment_11_manifest.json",
+      "expected_sha256": "1f3e8138279c1aa7b26951f9bf8dca4921ae8ac48b7f2909ea524b0e13a091b9",
+      "availability": "VERIFIED locally; not published",
+      "redistribution": "Owner decision pending"
+    },
+    {
+      "file": "experiment_12_failures.csv",
+      "sha256": "d3c2a337a8e6eeab836a7af2ab0b6eaed70be9a283f0a07a5329c40208d3726b",
+      "size_bytes": 352,
+      "source": "results/experiment_12/experiment_12_manifest.json :: experiment_12_failures.csv",
+      "source_manifest": "results/experiment_12/experiment_12_manifest.json",
+      "expected_sha256": "d3c2a337a8e6eeab836a7af2ab0b6eaed70be9a283f0a07a5329c40208d3726b",
+      "availability": "VERIFIED locally; not published",
+      "redistribution": "Owner decision pending"
+    },
+    {
+      "file": "experiment_12_per_sample.csv",
+      "sha256": "d63a4aa1b980d0b49f4272f070805d36ae689b6f20a0f305803f7a9f1834db64",
+      "size_bytes": 5101735,
+      "source": "results/experiment_12/experiment_12_manifest.json :: experiment_12_per_sample.csv",
+      "source_manifest": "results/experiment_12/experiment_12_manifest.json",
+      "expected_sha256": "d63a4aa1b980d0b49f4272f070805d36ae689b6f20a0f305803f7a9f1834db64",
+      "availability": "VERIFIED locally; not published",
+      "redistribution": "Owner decision pending"
+    },
+    {
+      "file": "experiment_12_report.md",
+      "sha256": "5af1fe80d9be71951523161970cb6da703fe207d99230c2b61f2e8f828b4b4ba",
+      "size_bytes": 2711,
+      "source": "results/experiment_12/experiment_12_manifest.json :: experiment_12_report.md",
+      "source_manifest": "results/experiment_12/experiment_12_manifest.json",
+      "expected_sha256": "5af1fe80d9be71951523161970cb6da703fe207d99230c2b61f2e8f828b4b4ba",
+      "availability": "VERIFIED locally; not published",
+      "redistribution": "Owner decision pending"
+    }
+  ]
+}

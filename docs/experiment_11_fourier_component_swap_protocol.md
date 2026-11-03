@@ -1,5 +1,9 @@
 # E011: Wild-Middle Fourier-Component Swap Protocol
 
+> Presentation clarification (2026-11-02): the frozen disk (377 modes) and
+> square (361 modes) are approximately mode-count-matched. Protocol settings
+> and original results are unchanged.
+
 Status: **FROZEN BEFORE INFERENCE**
 
 ## Research Question

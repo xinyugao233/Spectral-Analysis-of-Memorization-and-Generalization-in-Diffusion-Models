@@ -1,0 +1,11 @@
+{
+  "starting_commit": "055a8d4ba533ab1cba34b6e2ffedf88e051f8f89",
+  "verified_original_files": 195,
+  "paths": [
+    "results",
+    "configs",
+    "data",
+    "figures"
+  ],
+  "status": "all original tracked bytes identical"
+}

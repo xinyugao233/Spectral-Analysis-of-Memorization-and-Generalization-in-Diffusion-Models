@@ -1,5 +1,16 @@
 # E011: Fourier-Component Swap Results
 
+> Interpretation clarification (2026-11-02): memorization is the strict
+> Euclidean d1 < d2/3 criterion against the same frozen 1,000-image training
+> reference bank. G's zero observed hits do not establish absence of memorization
+> across its entire 50K training set. The 1,000 seeds are generation seeds for
+> one fixed checkpoint pair, not independent model-training replications.
+> All-zero empirical-bootstrap intervals do not prove an exactly zero population
+> effect. FID-1K is descriptive; reverse M-from-G suppression coincides with
+> substantial quality degradation. E012 interaction means nonadditivity of this
+> binary outcome under its frozen finite-difference scaling.
+
+
 ## Status
 
 `COMPLETED`. Slurm job `16820230` completed with exit code `0:0` in
@@ -55,13 +66,13 @@ for `Delta_M`.
 
 Replacing the recipient denoiser prediction's selected Fourier coefficients
 during calls `6..13` changed the memorization rate strongly in the donor's
-direction under both masks. The mode-count-matched square produced a slightly
+direction under both masks. The approximately mode-count-matched square produced a slightly
 smaller `Delta_G`; `Delta_M` was identical under the two masks.
 
 This intervention does not establish that middle frequencies cause
 memorization. The models have asymmetric baselines and differ in training-set
 size. The intervention replaces a broad selected coefficient region in a
-whole denoiser prediction across a fixed time window. In addition, `M <- G`
+same-state denoiser prediction across a fixed time window. In addition, `M <- G`
 has substantially worse descriptive FID-1K (`97.6654` and `99.3803`) than the
 baselines, so its zero memorization rate cannot be separated from output
 degradation. FID-1K is descriptive only.

@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=69"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -8,7 +8,8 @@ version = "0.1.0"
 description = "Frequency-resolved experiments for studying denoising transitions and memorization in diffusion models."
 readme = "README.md"
 requires-python = ">=3.11"
-license = { file = "LICENSE" }
+license = "MIT AND CC-BY-NC-SA-4.0"
+license-files = ["LICENSE", "LICENSE-EDM.txt", "THIRD_PARTY_NOTICES.md"]
 authors = [{ name = "Gao Xinyu" }]
 dependencies = [
     "matplotlib",
@@ -19,6 +20,7 @@ dependencies = [
     "torch",
     "torchvision",
     "tqdm",
+    "psutil",
 ]
 
 [tool.black]
