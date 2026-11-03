@@ -1,6 +1,6 @@
 # Spectral Analysis of Diffusion Memorization
 
-[![CPU review](https://github.com/xinyugao233/Spectral-Analysis-of-Memorization-and-Generalization-in-Diffusion-Models/actions/workflows/cpu.yml/badge.svg?branch=codex%2Fpublic-maintenance)](https://github.com/xinyugao233/Spectral-Analysis-of-Memorization-and-Generalization-in-Diffusion-Models/actions/workflows/cpu.yml)
+[![CPU review](https://github.com/xinyugao233/Spectral-Analysis-of-Memorization-and-Generalization-in-Diffusion-Models/actions/workflows/cpu.yml/badge.svg?branch=main)](https://github.com/xinyugao233/Spectral-Analysis-of-Memorization-and-Generalization-in-Diffusion-Models/actions/workflows/cpu.yml)
 
 **When can a diffusion model's denoiser predictions transfer memorization,
 and which Fourier bands participate?** This project studies one fixed pair of
